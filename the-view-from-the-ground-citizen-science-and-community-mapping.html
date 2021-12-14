@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 4 The View from the Ground: Citizen Science and Community Mapping | index.split</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 4 The View from the Ground: Citizen Science and Community Mapping | index.split" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 4 The View from the Ground: Citizen Science and Community Mapping | index.split" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="the-view-from-above-satellite-imagery-for-earth-observation.html"/>
+<link rel="next" href="gps-and-wayfinding.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/threejs-111/three.min.js"></script>
+<script src="libs/threejs-111/Detector.js"></script>
+<script src="libs/threejs-111/Projector.js"></script>
+<script src="libs/threejs-111/CanvasRenderer.js"></script>
+<script src="libs/globe-binding-0.3.3/globe.js"></script>
+<link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+<script src="libs/tabwid-1.0.0/tabwid.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 151: Our Digital Earth</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-goal-and-learning-outcomes"><i class="fa fa-check"></i>Course Goal and Learning Outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies-used-in-this-course"><i class="fa fa-check"></i>Case studies used in this course</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-readings"><i class="fa fa-check"></i>Course readings</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-this-course-is-structured"><i class="fa fa-check"></i>How this course is structured</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#pre-1"><i class="fa fa-check"></i><b>1.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#re-1"><i class="fa fa-check"></i><b>1.1.1</b> Readings</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#lo-1"><i class="fa fa-check"></i><b>1.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#activities-for-module-1"><i class="fa fa-check"></i>Activities for Module 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#digital-earth-today"><i class="fa fa-check"></i><b>1.2</b> Digital Earth Today</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#whatis"><i class="fa fa-check"></i><b>1.3</b> What is the Digital Earth</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#physical"><i class="fa fa-check"></i><b>1.4</b> From the Physical to the Digital Earth</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#themes"><i class="fa fa-check"></i><b>1.5</b> Themes, Layers, and Abstractions of Reality</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="intro.html"><a href="intro.html#abstractions-of-space"><i class="fa fa-check"></i><b>1.5.1</b> Abstractions of Space</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#career"><i class="fa fa-check"></i><b>1.6</b> The Digital Earth Career Path</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#m1-summ"><i class="fa fa-check"></i><b>1.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="intro.html"><a href="intro.html#m1-kt"><i class="fa fa-check"></i><b>1.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="action.html"><a href="action.html"><i class="fa fa-check"></i><b>2</b> The Digital Earth in Action</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="action.html"><a href="action.html#pre-2"><i class="fa fa-check"></i><b>2.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="action.html"><a href="action.html#re-2"><i class="fa fa-check"></i><b>2.1.1</b> Readings</a></li>
+<li class="chapter" data-level="2.1.2" data-path="action.html"><a href="action.html#lo-2"><i class="fa fa-check"></i><b>2.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="action.html"><a href="action.html#activities-for-module-2"><i class="fa fa-check"></i>Activities for Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="action.html"><a href="action.html#the-digital-earth-is-already-here"><i class="fa fa-check"></i><b>2.2</b> The Digital Earth is Already Here</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="action.html"><a href="action.html#covid-19-mapping-the-pandemic"><i class="fa fa-check"></i><b>2.2.1</b> COVID-19: Mapping the Pandemic</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="action.html"><a href="action.html#critically-thinking-about-geospatial-data"><i class="fa fa-check"></i><b>2.3</b> Critically Thinking about Geospatial Data</a></li>
+<li class="chapter" data-level="2.4" data-path="action.html"><a href="action.html#big-data-example-mapping-global-shipping-patterns"><i class="fa fa-check"></i><b>2.4</b> Big Data Example: Mapping Global Shipping Patterns</a></li>
+<li class="chapter" data-level="2.5" data-path="action.html"><a href="action.html#weather-prediction-in-the-digital-earth-era"><i class="fa fa-check"></i><b>2.5</b> Weather Prediction in the Digital Earth Era</a></li>
+<li class="chapter" data-level="2.6" data-path="action.html"><a href="action.html#the-digital-earth-basemaps---resources-to-explore"><i class="fa fa-check"></i><b>2.6</b> The Digital Earth Basemaps - Resources to Explore</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="action.html"><a href="action.html#terrestrial-water-storage"><i class="fa fa-check"></i><b>2.6.1</b> Terrestrial Water Storage</a></li>
+<li class="chapter" data-level="2.6.2" data-path="action.html"><a href="action.html#snow"><i class="fa fa-check"></i><b>2.6.2</b> Snow</a></li>
+<li class="chapter" data-level="2.6.3" data-path="action.html"><a href="action.html#human-settlements"><i class="fa fa-check"></i><b>2.6.3</b> Human Settlements</a></li>
+<li class="chapter" data-level="2.6.4" data-path="action.html"><a href="action.html#disease-outbreaks"><i class="fa fa-check"></i><b>2.6.4</b> Disease Outbreaks</a></li>
+<li class="chapter" data-level="2.6.5" data-path="action.html"><a href="action.html#economic-inequality"><i class="fa fa-check"></i><b>2.6.5</b> Economic Inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="action.html"><a href="action.html#m2-summ"><i class="fa fa-check"></i><b>2.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="action.html"><a href="action.html#m2-kt"><i class="fa fa-check"></i><b>2.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html"><i class="fa fa-check"></i><b>3</b> The View from Above: Satellite Imagery for Earth Observation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#pre-3"><i class="fa fa-check"></i><b>3.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#re-3"><i class="fa fa-check"></i><b>3.1.1</b> Readings</a></li>
+<li class="chapter" data-level="3.1.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#lo-3"><i class="fa fa-check"></i><b>3.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#activities-for-module-3"><i class="fa fa-check"></i>Activities for Module 3</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#what-is-earth-observation"><i class="fa fa-check"></i><b>3.2</b> What is Earth Observation?</a></li>
+<li class="chapter" data-level="3.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process"><i class="fa fa-check"></i><b>3.3</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#satellites"><i class="fa fa-check"></i><b>3.3.1</b> Satellites</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process-1"><i class="fa fa-check"></i><b>3.4</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>3.4.1</b> Sensors</a></li>
+<li class="chapter" data-level="3.4.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data"><i class="fa fa-check"></i><b>3.4.2</b> Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#analysis"><i class="fa fa-check"></i><b>3.4.3</b> Analysis</a></li>
+<li class="chapter" data-level="3.4.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#decision-making"><i class="fa fa-check"></i><b>3.4.4</b> Decision-Making</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#crop-monitoring-in-canada---earth-observation-in-action-i"><i class="fa fa-check"></i><b>3.5</b> Crop Monitoring in Canada - Earth Observation in Action I</a></li>
+<li class="chapter" data-level="3.6" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#earth-observation-data-for-digital-earth"><i class="fa fa-check"></i><b>3.6</b> Earth Observation Data for Digital Earth</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#hyperspectral-data"><i class="fa fa-check"></i><b>3.6.1</b> Hyperspectral Data</a></li>
+<li class="chapter" data-level="3.6.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data-cubes"><i class="fa fa-check"></i><b>3.6.2</b> Data Cubes</a></li>
+<li class="chapter" data-level="3.6.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#google-earth-engine-and-data-analytic-pipelines"><i class="fa fa-check"></i><b>3.6.3</b> Google Earth Engine and Data-Analytic Pipelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#high-resolution-imaging"><i class="fa fa-check"></i><b>3.7</b> High Resolution Imaging</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#object-based-image-analysis"><i class="fa fa-check"></i><b>3.7.1</b> Object-based image analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#monitoring-forest-carbon-from-space---earth-observation-in-action-ii"><i class="fa fa-check"></i><b>3.8</b> Monitoring Forest Carbon from Space - Earth Observation in Action II</a></li>
+<li class="chapter" data-level="3.9" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-summ"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-kt"><i class="fa fa-check"></i><b>3.9.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html"><i class="fa fa-check"></i><b>4</b> The View from the Ground: Citizen Science and Community Mapping</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#pre-4"><i class="fa fa-check"></i><b>4.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#re-4"><i class="fa fa-check"></i><b>4.1.1</b> Readings</a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#lo-4"><i class="fa fa-check"></i><b>4.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#activities-for-module-4"><i class="fa fa-check"></i>Activities for Module 4</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#this-digital-earth-includes-people"><i class="fa fa-check"></i><b>4.2</b> This Digital Earth includes People</a></li>
+<li class="chapter" data-level="4.3" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#citizen-science-empowering-people-through-mapping"><i class="fa fa-check"></i><b>4.3</b> Citizen Science: Empowering people through mapping</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#openstreetmaps-osm"><i class="fa fa-check"></i><b>4.3.1</b> OpenStreetMaps (OSM)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#crowdsourcing-case-study-rinkwatch"><i class="fa fa-check"></i><b>4.3.2</b> Crowdsourcing Case Study: RinkWatch</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#community-mapping"><i class="fa fa-check"></i><b>4.4</b> Community Mapping</a></li>
+<li class="chapter" data-level="4.5" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#augmented-reality"><i class="fa fa-check"></i><b>4.5</b> Augmented Reality</a></li>
+<li class="chapter" data-level="4.6" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#covid-contact-tracing-as-participatory-location-based-services"><i class="fa fa-check"></i><b>4.6</b> COVID Contact Tracing as Participatory Location-based Services</a></li>
+<li class="chapter" data-level="4.7" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-summ"><i class="fa fa-check"></i><b>4.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-kt"><i class="fa fa-check"></i><b>4.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html"><i class="fa fa-check"></i><b>5</b> GPS and Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#pre-5"><i class="fa fa-check"></i><b>5.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#re-5"><i class="fa fa-check"></i><b>5.1.1</b> Readings</a></li>
+<li class="chapter" data-level="5.1.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#lo-5"><i class="fa fa-check"></i><b>5.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#activities-for-module-5"><i class="fa fa-check"></i>Activities for Module 5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#what-is-gps"><i class="fa fa-check"></i><b>5.2</b> What is GPS?</a></li>
+<li class="chapter" data-level="5.3" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#how-gps-works"><i class="fa fa-check"></i><b>5.3</b> How GPS Works</a></li>
+<li class="chapter" data-level="5.4" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#wayfinding"><i class="fa fa-check"></i><b>5.4</b> Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#characteristics-of-wayfinding"><i class="fa fa-check"></i><b>5.4.1</b> Characteristics of Wayfinding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#ethical-issues-of-gps-tracking"><i class="fa fa-check"></i><b>5.5</b> Ethical Issues of GPS Tracking</a></li>
+<li class="chapter" data-level="5.6" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-summ"><i class="fa fa-check"></i><b>5.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-kt"><i class="fa fa-check"></i><b>5.6.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html"><i class="fa fa-check"></i><b>6</b> Unmanned Aerial Systems for Earth Observations</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#pre-6"><i class="fa fa-check"></i><b>6.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#re-6"><i class="fa fa-check"></i><b>6.1.1</b> Readings</a></li>
+<li class="chapter" data-level="6.1.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#lo-6"><i class="fa fa-check"></i><b>6.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#activities-for-module-6"><i class="fa fa-check"></i>Activities for Module 6</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uas-for-mapping"><i class="fa fa-check"></i><b>6.2</b> UAS for Mapping</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#platforms"><i class="fa fa-check"></i><b>6.2.1</b> Platforms</a></li>
+<li class="chapter" data-level="6.2.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>6.2.2</b> Sensors</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#d-mapping-from-uas"><i class="fa fa-check"></i><b>6.3</b> 3D Mapping from UAS</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#structure-from-motion-photogrammetry"><i class="fa fa-check"></i><b>6.3.1</b> Structure from Motion Photogrammetry</a></li>
+<li class="chapter" data-level="6.3.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#case-study-drones-for-mapping-snow-in-northern-canada"><i class="fa fa-check"></i><b>6.3.2</b> Case Study: Drones for mapping snow in northern Canada</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-mapping-project-planning"><i class="fa fa-check"></i><b>6.4</b> UAV Mapping Project Planning</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-flight-planning"><i class="fa fa-check"></i><b>6.4.1</b> UAV Flight Planning</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#regulations-for-using-uav-for-mapping-in-canada"><i class="fa fa-check"></i><b>6.5</b> Regulations for using UAV for mapping in Canada</a></li>
+<li class="chapter" data-level="6.6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-summ"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-kt"><i class="fa fa-check"></i><b>6.6.1</b> Keywords</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html"><i class="fa fa-check"></i><b>7</b> GIS and Big Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#pre-7"><i class="fa fa-check"></i><b>7.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#re-7"><i class="fa fa-check"></i><b>7.1.1</b> Readings</a></li>
+<li class="chapter" data-level="7.1.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#lo-7"><i class="fa fa-check"></i><b>7.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#activities-for-module-7"><i class="fa fa-check"></i>Activities for Module 7</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#overview-of-lesson"><i class="fa fa-check"></i><b>7.2</b> Overview of Lesson</a></li>
+<li class="chapter" data-level="7.3" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#live-worked-example-of-geospatial-data-analysis"><i class="fa fa-check"></i><b>7.3</b> Live Worked Example of Geospatial Data Analysis</a></li>
+<li class="chapter" data-level="7.4" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#geospatial-data-and-crime"><i class="fa fa-check"></i><b>7.4</b> Geospatial Data and Crime</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#what-is-crime-data"><i class="fa fa-check"></i><b>7.4.1</b> What is Crime Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-data-as-a-case-of-big-data"><i class="fa fa-check"></i><b>7.5</b> Crime Data as a case of Big Data</a></li>
+<li class="chapter" data-level="7.6" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-statistics-in-city-of-toronto"><i class="fa fa-check"></i><b>7.6</b> Crime Statistics in City of Toronto</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#exercise"><i class="fa fa-check"></i><b>7.6.1</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-summ"><i class="fa fa-check"></i><b>7.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-kt"><i class="fa fa-check"></i><b>7.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html"><i class="fa fa-check"></i><b>8</b> GeoVisualization and Story Maps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#pre-8"><i class="fa fa-check"></i><b>8.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#re-8"><i class="fa fa-check"></i><b>8.1.1</b> Readings</a></li>
+<li class="chapter" data-level="8.1.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#lo-8"><i class="fa fa-check"></i><b>8.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#activities-for-module-8"><i class="fa fa-check"></i>Activities for Module 8</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#what-is-geovisualization"><i class="fa fa-check"></i><b>8.2</b> What is Geovisualization?</a></li>
+<li class="chapter" data-level="8.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#viewing-the-digital-earth"><i class="fa fa-check"></i><b>8.3</b> Viewing the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#one-dimensional-views"><i class="fa fa-check"></i><b>8.3.1</b> One-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#two-dimensional-views"><i class="fa fa-check"></i><b>8.3.2</b> Two-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#three-dimensional-views"><i class="fa fa-check"></i><b>8.3.3</b> Three-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#four-dimensional-views"><i class="fa fa-check"></i><b>8.3.4</b> Four-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#dashboards-views-into-the-digital-earth"><i class="fa fa-check"></i><b>8.3.5</b> Dashboards Views into the Digital Earth</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#earth-system-geovisualization"><i class="fa fa-check"></i><b>8.4</b> Earth System GeoVisualization</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#noaa-view-data-exploration-tool"><i class="fa fa-check"></i><b>8.4.1</b> <span>NOAA View Data Exploration Tool</span></a></li>
+<li class="chapter" data-level="8.4.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#global-climate-dashboard"><i class="fa fa-check"></i><b>8.4.2</b> <span>Global Climate Dashboard</span></a></li>
+<li class="chapter" data-level="8.4.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#arctic-biodiversity-data-service"><i class="fa fa-check"></i><b>8.4.3</b> <span>Arctic Biodiversity Data Service</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#story-maps-digital-earth-storytelling"><i class="fa fa-check"></i><b>8.5</b> Story Maps: Digital Earth Storytelling</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#case-study-city-of-kitchener-lifestyle-segments"><i class="fa fa-check"></i><b>8.5.1</b> Case Study: City of Kitchener Lifestyle Segments</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#the-power-and-limits-of-geovisualization"><i class="fa fa-check"></i><b>8.6</b> The Power and Limits of GeoVisualization</a></li>
+<li class="chapter" data-level="8.7" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-summ"><i class="fa fa-check"></i><b>8.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-kt"><i class="fa fa-check"></i><b>8.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html"><i class="fa fa-check"></i><b>9</b> Term Project and Digital Earth Project Management</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#pre-9"><i class="fa fa-check"></i><b>9.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#re-9"><i class="fa fa-check"></i><b>9.1.1</b> Readings</a></li>
+<li class="chapter" data-level="9.1.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#lo-9"><i class="fa fa-check"></i><b>9.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#activities-for-module-9"><i class="fa fa-check"></i>Activities for Module 9</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#what-is-the-term-project"><i class="fa fa-check"></i><b>9.2</b> What is the Term Project?</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#the-project"><i class="fa fa-check"></i><b>9.2.1</b> The project</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#resources-for-developing-your-project-idea"><i class="fa fa-check"></i><b>9.3</b> Resources for Developing your Project Idea</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-a-google-earth-story---30-minute-activity"><i class="fa fa-check"></i><b>9.3.1</b> Creating a Google Earth Story - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-an-arcgis-online-story-map---30-minute-activity"><i class="fa fa-check"></i><b>9.3.2</b> Creating an ArcGIS Online Story Map - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#importing-and-working-with-gis-data-in-google-earth---30-minute-activity"><i class="fa fa-check"></i><b>9.3.3</b> Importing and Working with GIS Data in Google Earth - 30 minute activity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#planning-your-term-project"><i class="fa fa-check"></i><b>9.4</b> Planning your term project</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#writing-style"><i class="fa fa-check"></i><b>9.4.1</b> Writing Style</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#evaluation"><i class="fa fa-check"></i><b>9.5</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-digital-earth-town-hall.html"><a href="the-digital-earth-town-hall.html"><i class="fa fa-check"></i><b>10</b> The Digital Earth Town Hall</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i>Assignments</a>
+<ul>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-1-assignment"><i class="fa fa-check"></i>Module 1 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-2-assignment"><i class="fa fa-check"></i>Module 2 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-3-assignment"><i class="fa fa-check"></i>Module 3 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-4-assignment"><i class="fa fa-check"></i>Module 4 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-5-assignment"><i class="fa fa-check"></i>Module 5 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-6-assignment"><i class="fa fa-check"></i>Module 6 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-7-assignment"><i class="fa fa-check"></i>Module 7 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-8-assignment"><i class="fa fa-check"></i>Module 8 Assignment</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-view-from-the-ground-citizen-science-and-community-mapping" class="section level1" number="4">
+<h1><span class="header-section-number">Module 4</span> The View from the Ground: Citizen Science and Community Mapping</h1>
+<div id="pre-4" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Preliminaries</h2>
+<div id="re-4" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Readings</h3>
+<p>Readings should be done when referenced during this week’s lesson. Do not read before starting the lesson.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www-jstor-org.libproxy.wlu.ca/stable/41148191">Goodchild, M. F. (2007). Citizens as sensors: The world of volunteered geography. GeoJournal, 69(4), 211–221.</a> (note: will require logging in to the Laurier website to access)</li>
+<li><a href="https://www.theguardian.com/science/blog/2018/mar/06/counter-mapping-cartography-that-lets-the-powerless-speak">Guardian on Countermapping</a></li>
+</ol>
+</div>
+<div id="lo-4" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Learning Objectives</h3>
+<p>By the end of this lesson, students will be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Describe two ways individual citizens can contribute to Digital Earth projects</li>
+<li>Differentiate between volunteered geographic information and citizen science</li>
+<li>Describe three limitations of citizen-generated geospatial data</li>
+<li>Provide an example of a community mapping project</li>
+</ol>
+</div>
+<div id="activities-for-module-4" class="section level3 unnumbered">
+<h3>Activities for Module 4</h3>
+<ol style="list-style-type: decimal">
+<li>Readings</li>
+<li>Assignment A-M4</li>
+<li>Quiz Q-M4</li>
+</ol>
+Optional: Reading report [3 total for the course], Participation [minimum of 4 total for the course]
+<hr>
+</div>
+</div>
+<div id="this-digital-earth-includes-people" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> This Digital Earth includes People</h2>
+<p>Much of the discussion of the Digital Earth we’ve had so far has focused on what we might call <em>top-down technologies</em>: satellites, sensors, data cubes, online platforms. These have impressive capabilities to create, manage and provide access to geospatial data about the earth. However these tools provide little in terms of agency - that is - little opportunity for <strong>you</strong> to actively participate in their design and operation. This is important because - as we want to emphasize throughout this course - there are design decisions that go into these technologies that can have major impacts on how they are used. In this chapter we want to showcase an alternate set of tools, technologies and trends that have provided for a primary role for citizens in creating and operationalizing the Digital Earth.</p>
+<p>You may have heard the term <strong>web 2.0</strong>, or rather - if you were born in the 1990s you may have not heard that term because all you have known is web 2.0. The early Internet was in some ways characterized as a one-way form of communication. People could create content and put it up on website, and link to other websites via hyperlinks - which linked web-based documents together.</p>
+<p>In a way, the Early Internet was a new frontier as it was fairly simple with a bit of basic coding skills to put up a website; many of the web-pages and online content were created by amateur-hobbyists. As the Internet matured into the late 2000s, more of the content was authored by corporate entities (e.g., companies, journalists, etc.). As this was occurring, the Internet was transformed by a fundamental change in how people interacted with online content. Instead of simply viewing content - Web 2.0 websites allowed people to actively interact with content: posting comments, liking and disliking posts, adding their own text, video and audio content. If you want to know more about the early Internet - <a href="https://en.wikipedia.org/wiki/Halt_and_Catch_Fire_(TV_series)">watch Halt and Catch Fire</a> (especially Season 4).</p>
+<p>A similar evolution can be traced in the DE. While the DE is very much in essence a top-down one-way type of technology analogous to the early Internet, a suite of geospatial technologies have evolved that have enabled ordinary citizens to create their own geospatial data. The biggest factor in enabling this transformation was the widespread adoption of mobile phones equipped with location sensors (e.g., GPS chips). Coupled with Web 2.0, these two technologies (i.e., mobile phone GPS chips and websites supporting user-generated content) created a unique opportunity for citizen and community-generated geospatial authoring.</p>
+<p>What we saw as a result has been described by various terms: Volunteered Geographic Information (VGI - Goodchild et al 2007.), user-generated geographic content (UGC), or geographic citizen science (Haklay 2010). Whatever the term, the result has been an explosion in the production of geospatial data. These types of data can also be an important component of the DE. For example we saw in the <a href="http://www.marinetraffic.com">marinetraffic.com</a> example how user-generated content in the form of pictures and videos of ships and ports added rich geographical context information to the ship location data provided by the AIS sensors. <em>This sort of information fusion is a key characteristic of the DE.</em></p>
+</div>
+<div id="citizen-science-empowering-people-through-mapping" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Citizen Science: Empowering people through mapping</h2>
+<p>In 2007, Geographer Michael Goodchild gave voice to this emerging trend of citizen-empowered mapping in 📖 <a href="https://www-jstor-org.libproxy.wlu.ca/stable/41148191">an article titled “Citizens as sensors: The world of volunteered geography”</a>. This highly influential paper begins with a recounting of the naming of America (the continent) by a little-known European mapmaker in the year 1507. The story illustrates that throughout history geographic information has been produced through a variety of ways; mapmakers, explorers, colonialists, victors in wars, etc. In fact, place names are often the outcome of highly politicized processes.</p>
+<p>In many parts of Canada for example, modern place names of natural features are names given by European settlers and colonial powers (e.g., United Kingdom, France and Spain), ignoring their existing names used by Indigenous peoples already residing there. As such there is a <a href="https://www.nrcan.gc.ca/earth-sciences/geography/indigenous-place-names/19739">movement in many parts of Canada to re-adopt Indigenous place names</a>. Authority to designate official geographic place names has become the sole purview of governmental bodies at various levels. As Goodchild notes in his article, attempting to change a place name today is extremely difficult. And there are often compelling reasons for wanting to change geographic place names; for example in our own backyard there has been a <a href="https://www.cbc.ca/player/play/1120283715881">longstanding effort to attempt to rename a controversial stretch of road in Puslinch</a> <a href="https://www.therecord.com/news/waterloo-region/2020/06/18/renewed-call-to-rename-swastika-trail.html">(note this debate is ongoing today)</a>. Read through and watch these resources to get familiar with the debate in Puslinch.</p>
+<p><strong>Stop and Do - 1</strong> <br><mark style="background-color: lightgreen"> Debates over naming and renaming geographic features are often highly contentious. Why do you think this is? <strong>List two arguments for and against changing the name of the road in Puslinch.</strong> What side of the debate would you be on? Can you think of any other process we could use to name geographic features?</mark></p>
+<p>Unlike in the early days of map-mapmaking, geographic data can now be created in many different ways. The DE concept is founded on a holistic digital representation of the places we work, live, and play in on a daily basis. The Goodchild paper also recounts how three core geographic <em>enabling technologies</em> have contributed to the explosive growth of <strong>volunteered geographic information</strong>.</p>
+<p><strong>Georeferencing</strong> in the broadest sense is the process of attaching geographic coordinates to non-geographic information. Such non-geographic information may in fact have its own internal coordinate system, but must be anchored to the earth through the process of georeferencing. Think about if you take a photo with your phone and download it to your computer, it will often have geographic coordinates attached the image (it might show up on a map when viewing it as well). This is a georeferencing process of the photo using the phones internal GPS sensor. The coordinates are latitude and longitude - the most common geographic positioning system used for locating positions on the earth. Geographic coordinates are great because they work for any location on earth and they are easily stored and processed by computers. However, if I asked you to tell me your thoughts on 43.476160, -80.524969 you might have some difficulty. You would need to <em>map</em> these coordinates and see their relation to other geographic context information to make sense of the question. <a href="https://www.google.com/search?q=43.476160%2C+-80.524969">You can do this easily by searching for coordinates in Google for example</a>.</p>
+<p>Humans cannot naturally work with geographic information in the form of coordinates very well. As such - alternate ways of recording positional information have been devised such as street addresses. For instance, 75 University Avenue West is much more memorable than 43.473559, -80.527479. However even addresses, although much more memorable, have problems. For example, 5 King Street Ontario could be located in any number of towns; we’d need municipality name and postal code to be sure of the location. Other locations have less developed street addressing systems (e.g, small villages without paved roads) - how can we locate positions in these areas?</p>
+<p>The <a href="https://what3words.com/">what3words</a> project linked to above attempts to solve this problem by cutting up the entire world into 3 m x 3 m square cells, and attaching three random words to each cell. Thus <a href="https://what3words.com/amends.explores.test">amends.explores.test</a> vs. <a href="https://what3words.com/consequences.gaping.quack">consequences.gaping.quack</a> vs. <a href="https://what3words.com/enchanted.clashed.revving">enchanted.clashed.revving</a> all refer to separate distinct locations. It turns out that by simply using three word strings, there are enough unique combinations to index every 3 m x 3 m square cell on the entire planet (i.e., over 57 trillion cells). One of the issues with that system is there is no logical ordering so you have no way to know about the relative positioning of location references like you do using geographic coordinates.</p>
+<p>Whether we use geographic coordinates, or street address, or alternative systems like what3words, when we attaching these geographic references to other information we are in way georeferencing that information. In practice, we almost always want to eventually translate back to geographic coordinates.</p>
+<p>The particular case of translating street addresses to geographic coordinates is called <strong>geocoding</strong>. The process of georeferencing has been made much easier and more extensive by two primary technologies. Firstly, GPS, which is a type of global navigation satellite system (we’ll discuss in detail next week) - has moved from being available only in standalone receivers at degraded positional accuracy, to available on tiny chips with meter-level accuracy. This has led to location-based apps and services, that are so common today. This also means that people can contribute geospatial data via apps and websites relatively easily. Secondly, webmapping systems have been developed which allow people to associate new information with geographic coordinates by clicking on an online map which records the click and translates that from screen coordinates to geographic coordinates. This process is sometimes called <em>heads up digitizing</em>. With these two tools for creating geospatial data now so widely available, it is no wonder that VGI and user-generated geographical data have greatly increased the overall production of geospatial data.</p>
+<hr>
+<div id="openstreetmaps-osm" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> OpenStreetMaps (OSM)</h3>
+<p>The OpenStreetMaps (OSM) project is a web mapping application that aims to create a map of the world through <strong>crowdsourcing</strong>. You can compare Figure 4 in the Goodchild article to the <a href="https://www.openstreetmap.org/#map=15/53.3605/-6.2803"><em>state of the map</em> today</a>. You will notice that there is a lot more detail in the current version compared to the version of the map in the 2007 article, attributed to more and more people contributing to mapping the streets in their community. Today OSM map data is used in a wide variety of applications. In fact, many web map applications now use OSM data as their <strong>basemap data</strong>.</p>
+<p>The idea of an open source collaborative process to create geospatial data has both benefits and challenges. On the one hand, there often less control organization to the mapping effort, as people are volunteering their time and contributing mapping edits when it is convenient for them. This can result in <a href="https://www.openstreetmap.org/search?query=Commercial%20Drive%2C%20Vancouver#map=16/49.2950/-123.1348&amp;layers=G">popular areas of the map having lots of detail</a>,</p>
+<div class="figure"><span id="fig:unnamed-chunk-29"></span>
+<img src="images/osm.png" alt="Screenshot of [OSM public GPS trace data near Stanley Park](https://www.openstreetmap.org/search?query=stanley%20park#map=14/49.3019/-123.1380&amp;layers=G), Vancouver, BC.  OpenStreetMap, licensed under Creative Commons (CC BY-SA 2.0)." width="80%" />
+<p class="caption">
+Figure 4.1: Screenshot of <a href="https://www.openstreetmap.org/search?query=stanley%20park#map=14/49.3019/-123.1380&amp;layers=G">OSM public GPS trace data near Stanley Park</a>, Vancouver, BC. OpenStreetMap, licensed under Creative Commons (CC BY-SA 2.0).
+</p>
+</div>
+<p>while more <a href="https://www.openstreetmap.org/node/637897018#map=17/6.68075/80.40272&amp;layers=G">remote areas or less frequently visited areas</a> are missing and/or incomplete. The first location is the entance to Stanley Park in Vancouver, British Columbia, while the second location is in the city of Rathnapura in the central region of Sri Lanka. These maps show public GPS traces uploaded to OSM in these two different locations. Seeing the Sri Lanka city we see GPS traces present basically on the major roadways perhaps in line with public transportation routes. Whereas on the Vancouver map we see many many overlapping traces on roadways, sidewalks, trails into the park, and so on. Why do you think this would be? This variation in <em>coverage</em> of OSM data is an important issue if the data is to be used for things like routing. One of the more challenging aspects of variable coverage in OSM data is that the variation tends to correlate with things that are related to <em>who</em> is doing the mapping - often people with some sophistication with technology, money, more so in Europe and North America than are regions, etc. These sorts of systematic biases in the data can greatly reduce its overall quality and usefulness. <a href="https://kfrichter.org/crowdsourcing-material/day1/haklay10.pdf">One study that compared OSM data to official government data in the United Kingdom</a> (Haklay 2010) found that in the 10 wealthiest neighbourhoods 76% of total road length was mapped in OSM, whereas in the 10 poorest neighbourhoods only 46% of the total road was mapped (this study was done in 2010).</p>
+<p><strong>Stop and Do - 2</strong> <br><mark style="background-color: orange"> Why do you think there may be systematic biases in OSM data and/or in VGI more generally? Can you think of an example where this sort of bias could be really important? How could bias in who participates in a project like OSM be reduced?</mark></p>
+</div>
+<div id="crowdsourcing-case-study-rinkwatch" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Crowdsourcing Case Study: RinkWatch</h3>
+<p>There are countless examples of how such <em>crowdsourced</em> data can fill in gaps in official data sources or provide insights into problems or issues where no information exists. At Laurier for example there is a <a href="https://www.rinkwatch.org/">project called RinkWatch</a> which is a crowdsourcing project where people report when they can skate on outdoor/backyard rinks during winter. Tracking these observations over time, we can see how people’s outdoor skating activities - a storied part of Canadian culture - is sensitive to changes in weather and climate. Such data about people’s skating activites simply does not exist in any other form, so eliciting public engagement and input on the RinkWatch project has <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/cag.12225">been key to exploring this issue</a>.</p>
+<div class="figure"><span id="fig:unnamed-chunk-30"></span>
+<img src="images/rw.png" alt="Screenshot of the [RinkWatch homepage](https://www.rinkwatch.org/)" width="80%" />
+<p class="caption">
+Figure 4.2: Screenshot of the <a href="https://www.rinkwatch.org/">RinkWatch homepage</a>
+</p>
+</div>
+<hr>
+</div>
+</div>
+<div id="community-mapping" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Community Mapping</h2>
+<p>VGI projects like OSM described above tend to be focused on individual participation; recruiting interested individuals to contribute their time and energy to a project of interest. There are also more collective, group oriented, mapping exercises which are generally described as <em>community mapping</em>.</p>
+<p>In a community mapping project, people get together to develop a project around a common issue; usually an environmental issue that requires geospatial data collection, collation and sometimes analysis. The notion of <strong>counter mapping</strong> has been used to describe community mapping projects where communities map a theme or issue of interest in direct opposition to corporate or state powers.</p>
+<p>The counter mapping process is collaborative, iterative and often non-digital; where people markup paper maps to designate areas and highlight concerns. Counter mapping thus has the potential to give voice to typically marginalized communities and to promote environmental justice through authoring of geospatial data and stories. From the perspective of the DE, these sorts of rich community data can provide critical local context to abstractions of geospatial data. A 📖 <a href="https://www.theguardian.com/science/blog/2018/mar/06/counter-mapping-cartography-that-lets-the-powerless-speak">short article in the Guardian provides a brief overview of some countermapping</a> projects.</p>
+<div class="figure"><span id="fig:unnamed-chunk-31"></span>
+<img src="images/greenmapcapetown.png" alt="Screenshot of the [Capetown Green Map](https://www.capetowngreenmap.co.za/)" width="80%" />
+<p class="caption">
+Figure 4.3: Screenshot of the <a href="https://www.capetowngreenmap.co.za/">Capetown Green Map</a>
+</p>
+</div>
+<p>A great example of community mapping can be found on <a href="https://www.greenmap.org/maps-projects/explore-green-maps">greenmap</a> which includes community mapping projects from around the world. The greenmap project provides a consistent methodology and software for communities to deploy in mapping local areas - either for generic mapping or around a community concern. There are hundreds of examples of greenmaps in cities around the world, initiated by community groups, city governments, university groups, and others. Have a look through some of the greenmap projects - can you think of an issue you would could create a greenmap for in your community? What would it be? What type of information would you want to map?</p>
+<hr>
+</div>
+<div id="augmented-reality" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Augmented Reality</h2>
+<p>In the examples we have talked about so far, we have primarily been describing ways that citizens and communities can get involved in <strong>creating</strong> geospatial data, either to participate in a wider project initiated by others (e.g., scientists, government) or through a collaborative community process. However citizens can also utilize the DE to their own ends by bring the digital world into the physical world of their lived experience - this means bringing down location-based digital data to one’s perception of the world around them. This may sound a little odd but is surpsingly common. Location-based services on your smartphone use your phone’s GPS chip to send geographic information to an app that uses that information to send you <strong>geographically relevant</strong> information. This information might then shape how you interact with the world around you.</p>
+</div>
+<div id="covid-contact-tracing-as-participatory-location-based-services" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> COVID Contact Tracing as Participatory Location-based Services</h2>
+<p>A recent example of location-based services is contact tracing apps - made popular in the wake of efforts to contain COVID-19 around the world. The principle behind some of these apps is that location data are recorded on the app, and when someone tests positive for COVID-19, their location history can be compared against location histories of other users to determine potential exposures. In Canada, the contract tracing app provided by the federal government is voluntary, so may suffer from some of the issues of <em>coverage</em> noted in our discussion of VGI.</p>
+<p>In the case of contact-tracing apps as a location-based service, the location element only ever becomes relevant in retrospect (assuming the postive case goes into quarantine after learning of their test result). The <em>historical</em> location history then is activated and compare against other peoples historical location history (and/or location check-ins at distinct locations).</p>
+<p>In the Canadian app - called <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/covid-alert.html">COVID Alert</a> - the app was actually engineered to not technically use GPS data.</p>
+<div class="figure"><span id="fig:unnamed-chunk-32"></span>
+<img src="images/covid.jpg" alt="COVID Alert App" width="20%" />
+<p class="caption">
+Figure 4.4: COVID Alert App
+</p>
+</div>
+<p>Instead, the app actually broadcasts and receives random numbers to <strong>nearby</strong> phones using Bluetooth, then for any positive test the codes of exposed people are known and they can be notified. This system has the benefit of protecting peoples <strong>geoprivacy</strong> and is not dependent on access to GPS satellites (i.e., Bluetooth will work indoors). The geospatial component in COVID-Alert is therefore based on the range of the Bluetooth signal (~10 m) which is a good proxy for potential exposure to COVID-19. Bluetooth radio waves however do not depend on line-of-sight —</p>
+<p><strong>Stop and Think - 1</strong> <br><mark style="background-color: lightgreen"> Can you think of an example of why this might be an issue? </mark></p>
+<p>Location-based services have been extended to more visual applications, which allow you to visualize geospatial data within the actual geographic context you are located in. This is best described by simply seeing it, which you can see in this promo video for a local augmented reality / geospatal company:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wg6jN-audEM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p><strong>Stop and Do - 3</strong> <br><mark style="background-color: orange"> How could AR such as that in the video above be used in another context such as emergency response or policing? How does visualizing geospatial data in-the-field change how you might perceive or understand the data? </mark></p>
+<hr>
+</div>
+<div id="m4-summ" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Summary</h2>
+<p>In the preceding chapters we talked about the vision for the DE, how its been applied, and how the growth of satellite-based earth observation is fueling new ways to monitor natural and social processes at global and local scales. The primary elements in this discussion were technologies.</p>
+<p>In this chapter we sought to highlight how people are involved in the DE, primarily through the production of geographic information through VGI, citizen science, crowdsourcing, and community mapping. These tools give communities new ways to help shape their worlds and solve environmental problems in their own communities. Viewed from the perspective of the DE, these tools can be leverage the vast sources of geospatial data to enrich their own observations and data collection efforts. The advent of augmented reality is a new technology enabling the fusion of remote geospatial data from the DE with the local geographic context being experienced by the user.</p>
+<p>As a greater synthesis of remote and localized DE tools becomes a reality, there will be new ways for individuals and communities to respond to and anticipate change.</p>
+<div id="m4-kt" class="section level3" number="4.7.1">
+<h3><span class="header-section-number">4.7.1</span> Key Terms</h3>
+<ul>
+<li>volunteered geographic information</li>
+<li>coverage</li>
+<li>crowdsourcing</li>
+<li>community mapping</li>
+<li>georeferencing</li>
+<li>geocoding</li>
+<li>top-down vs. bottom up mapping</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-view-from-above-satellite-imagery-for-earth-observation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gps-and-wayfinding.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-citsci.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 2 The Digital Earth in Action | index.split</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 2 The Digital Earth in Action | index.split" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 2 The Digital Earth in Action | index.split" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="the-view-from-above-satellite-imagery-for-earth-observation.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/threejs-111/three.min.js"></script>
+<script src="libs/threejs-111/Detector.js"></script>
+<script src="libs/threejs-111/Projector.js"></script>
+<script src="libs/threejs-111/CanvasRenderer.js"></script>
+<script src="libs/globe-binding-0.3.3/globe.js"></script>
+<link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+<script src="libs/tabwid-1.0.0/tabwid.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 151: Our Digital Earth</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-goal-and-learning-outcomes"><i class="fa fa-check"></i>Course Goal and Learning Outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies-used-in-this-course"><i class="fa fa-check"></i>Case studies used in this course</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-readings"><i class="fa fa-check"></i>Course readings</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-this-course-is-structured"><i class="fa fa-check"></i>How this course is structured</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#pre-1"><i class="fa fa-check"></i><b>1.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#re-1"><i class="fa fa-check"></i><b>1.1.1</b> Readings</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#lo-1"><i class="fa fa-check"></i><b>1.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#activities-for-module-1"><i class="fa fa-check"></i>Activities for Module 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#digital-earth-today"><i class="fa fa-check"></i><b>1.2</b> Digital Earth Today</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#whatis"><i class="fa fa-check"></i><b>1.3</b> What is the Digital Earth</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#physical"><i class="fa fa-check"></i><b>1.4</b> From the Physical to the Digital Earth</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#themes"><i class="fa fa-check"></i><b>1.5</b> Themes, Layers, and Abstractions of Reality</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="intro.html"><a href="intro.html#abstractions-of-space"><i class="fa fa-check"></i><b>1.5.1</b> Abstractions of Space</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#career"><i class="fa fa-check"></i><b>1.6</b> The Digital Earth Career Path</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#m1-summ"><i class="fa fa-check"></i><b>1.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="intro.html"><a href="intro.html#m1-kt"><i class="fa fa-check"></i><b>1.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="action.html"><a href="action.html"><i class="fa fa-check"></i><b>2</b> The Digital Earth in Action</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="action.html"><a href="action.html#pre-2"><i class="fa fa-check"></i><b>2.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="action.html"><a href="action.html#re-2"><i class="fa fa-check"></i><b>2.1.1</b> Readings</a></li>
+<li class="chapter" data-level="2.1.2" data-path="action.html"><a href="action.html#lo-2"><i class="fa fa-check"></i><b>2.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="action.html"><a href="action.html#activities-for-module-2"><i class="fa fa-check"></i>Activities for Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="action.html"><a href="action.html#the-digital-earth-is-already-here"><i class="fa fa-check"></i><b>2.2</b> The Digital Earth is Already Here</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="action.html"><a href="action.html#covid-19-mapping-the-pandemic"><i class="fa fa-check"></i><b>2.2.1</b> COVID-19: Mapping the Pandemic</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="action.html"><a href="action.html#critically-thinking-about-geospatial-data"><i class="fa fa-check"></i><b>2.3</b> Critically Thinking about Geospatial Data</a></li>
+<li class="chapter" data-level="2.4" data-path="action.html"><a href="action.html#big-data-example-mapping-global-shipping-patterns"><i class="fa fa-check"></i><b>2.4</b> Big Data Example: Mapping Global Shipping Patterns</a></li>
+<li class="chapter" data-level="2.5" data-path="action.html"><a href="action.html#weather-prediction-in-the-digital-earth-era"><i class="fa fa-check"></i><b>2.5</b> Weather Prediction in the Digital Earth Era</a></li>
+<li class="chapter" data-level="2.6" data-path="action.html"><a href="action.html#the-digital-earth-basemaps---resources-to-explore"><i class="fa fa-check"></i><b>2.6</b> The Digital Earth Basemaps - Resources to Explore</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="action.html"><a href="action.html#terrestrial-water-storage"><i class="fa fa-check"></i><b>2.6.1</b> Terrestrial Water Storage</a></li>
+<li class="chapter" data-level="2.6.2" data-path="action.html"><a href="action.html#snow"><i class="fa fa-check"></i><b>2.6.2</b> Snow</a></li>
+<li class="chapter" data-level="2.6.3" data-path="action.html"><a href="action.html#human-settlements"><i class="fa fa-check"></i><b>2.6.3</b> Human Settlements</a></li>
+<li class="chapter" data-level="2.6.4" data-path="action.html"><a href="action.html#disease-outbreaks"><i class="fa fa-check"></i><b>2.6.4</b> Disease Outbreaks</a></li>
+<li class="chapter" data-level="2.6.5" data-path="action.html"><a href="action.html#economic-inequality"><i class="fa fa-check"></i><b>2.6.5</b> Economic Inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="action.html"><a href="action.html#m2-summ"><i class="fa fa-check"></i><b>2.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="action.html"><a href="action.html#m2-kt"><i class="fa fa-check"></i><b>2.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html"><i class="fa fa-check"></i><b>3</b> The View from Above: Satellite Imagery for Earth Observation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#pre-3"><i class="fa fa-check"></i><b>3.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#re-3"><i class="fa fa-check"></i><b>3.1.1</b> Readings</a></li>
+<li class="chapter" data-level="3.1.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#lo-3"><i class="fa fa-check"></i><b>3.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#activities-for-module-3"><i class="fa fa-check"></i>Activities for Module 3</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#what-is-earth-observation"><i class="fa fa-check"></i><b>3.2</b> What is Earth Observation?</a></li>
+<li class="chapter" data-level="3.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process"><i class="fa fa-check"></i><b>3.3</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#satellites"><i class="fa fa-check"></i><b>3.3.1</b> Satellites</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process-1"><i class="fa fa-check"></i><b>3.4</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>3.4.1</b> Sensors</a></li>
+<li class="chapter" data-level="3.4.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data"><i class="fa fa-check"></i><b>3.4.2</b> Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#analysis"><i class="fa fa-check"></i><b>3.4.3</b> Analysis</a></li>
+<li class="chapter" data-level="3.4.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#decision-making"><i class="fa fa-check"></i><b>3.4.4</b> Decision-Making</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#crop-monitoring-in-canada---earth-observation-in-action-i"><i class="fa fa-check"></i><b>3.5</b> Crop Monitoring in Canada - Earth Observation in Action I</a></li>
+<li class="chapter" data-level="3.6" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#earth-observation-data-for-digital-earth"><i class="fa fa-check"></i><b>3.6</b> Earth Observation Data for Digital Earth</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#hyperspectral-data"><i class="fa fa-check"></i><b>3.6.1</b> Hyperspectral Data</a></li>
+<li class="chapter" data-level="3.6.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data-cubes"><i class="fa fa-check"></i><b>3.6.2</b> Data Cubes</a></li>
+<li class="chapter" data-level="3.6.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#google-earth-engine-and-data-analytic-pipelines"><i class="fa fa-check"></i><b>3.6.3</b> Google Earth Engine and Data-Analytic Pipelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#high-resolution-imaging"><i class="fa fa-check"></i><b>3.7</b> High Resolution Imaging</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#object-based-image-analysis"><i class="fa fa-check"></i><b>3.7.1</b> Object-based image analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#monitoring-forest-carbon-from-space---earth-observation-in-action-ii"><i class="fa fa-check"></i><b>3.8</b> Monitoring Forest Carbon from Space - Earth Observation in Action II</a></li>
+<li class="chapter" data-level="3.9" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-summ"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-kt"><i class="fa fa-check"></i><b>3.9.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html"><i class="fa fa-check"></i><b>4</b> The View from the Ground: Citizen Science and Community Mapping</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#pre-4"><i class="fa fa-check"></i><b>4.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#re-4"><i class="fa fa-check"></i><b>4.1.1</b> Readings</a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#lo-4"><i class="fa fa-check"></i><b>4.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#activities-for-module-4"><i class="fa fa-check"></i>Activities for Module 4</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#this-digital-earth-includes-people"><i class="fa fa-check"></i><b>4.2</b> This Digital Earth includes People</a></li>
+<li class="chapter" data-level="4.3" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#citizen-science-empowering-people-through-mapping"><i class="fa fa-check"></i><b>4.3</b> Citizen Science: Empowering people through mapping</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#openstreetmaps-osm"><i class="fa fa-check"></i><b>4.3.1</b> OpenStreetMaps (OSM)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#crowdsourcing-case-study-rinkwatch"><i class="fa fa-check"></i><b>4.3.2</b> Crowdsourcing Case Study: RinkWatch</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#community-mapping"><i class="fa fa-check"></i><b>4.4</b> Community Mapping</a></li>
+<li class="chapter" data-level="4.5" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#augmented-reality"><i class="fa fa-check"></i><b>4.5</b> Augmented Reality</a></li>
+<li class="chapter" data-level="4.6" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#covid-contact-tracing-as-participatory-location-based-services"><i class="fa fa-check"></i><b>4.6</b> COVID Contact Tracing as Participatory Location-based Services</a></li>
+<li class="chapter" data-level="4.7" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-summ"><i class="fa fa-check"></i><b>4.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-kt"><i class="fa fa-check"></i><b>4.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html"><i class="fa fa-check"></i><b>5</b> GPS and Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#pre-5"><i class="fa fa-check"></i><b>5.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#re-5"><i class="fa fa-check"></i><b>5.1.1</b> Readings</a></li>
+<li class="chapter" data-level="5.1.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#lo-5"><i class="fa fa-check"></i><b>5.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#activities-for-module-5"><i class="fa fa-check"></i>Activities for Module 5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#what-is-gps"><i class="fa fa-check"></i><b>5.2</b> What is GPS?</a></li>
+<li class="chapter" data-level="5.3" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#how-gps-works"><i class="fa fa-check"></i><b>5.3</b> How GPS Works</a></li>
+<li class="chapter" data-level="5.4" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#wayfinding"><i class="fa fa-check"></i><b>5.4</b> Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#characteristics-of-wayfinding"><i class="fa fa-check"></i><b>5.4.1</b> Characteristics of Wayfinding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#ethical-issues-of-gps-tracking"><i class="fa fa-check"></i><b>5.5</b> Ethical Issues of GPS Tracking</a></li>
+<li class="chapter" data-level="5.6" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-summ"><i class="fa fa-check"></i><b>5.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-kt"><i class="fa fa-check"></i><b>5.6.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html"><i class="fa fa-check"></i><b>6</b> Unmanned Aerial Systems for Earth Observations</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#pre-6"><i class="fa fa-check"></i><b>6.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#re-6"><i class="fa fa-check"></i><b>6.1.1</b> Readings</a></li>
+<li class="chapter" data-level="6.1.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#lo-6"><i class="fa fa-check"></i><b>6.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#activities-for-module-6"><i class="fa fa-check"></i>Activities for Module 6</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uas-for-mapping"><i class="fa fa-check"></i><b>6.2</b> UAS for Mapping</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#platforms"><i class="fa fa-check"></i><b>6.2.1</b> Platforms</a></li>
+<li class="chapter" data-level="6.2.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>6.2.2</b> Sensors</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#d-mapping-from-uas"><i class="fa fa-check"></i><b>6.3</b> 3D Mapping from UAS</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#structure-from-motion-photogrammetry"><i class="fa fa-check"></i><b>6.3.1</b> Structure from Motion Photogrammetry</a></li>
+<li class="chapter" data-level="6.3.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#case-study-drones-for-mapping-snow-in-northern-canada"><i class="fa fa-check"></i><b>6.3.2</b> Case Study: Drones for mapping snow in northern Canada</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-mapping-project-planning"><i class="fa fa-check"></i><b>6.4</b> UAV Mapping Project Planning</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-flight-planning"><i class="fa fa-check"></i><b>6.4.1</b> UAV Flight Planning</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#regulations-for-using-uav-for-mapping-in-canada"><i class="fa fa-check"></i><b>6.5</b> Regulations for using UAV for mapping in Canada</a></li>
+<li class="chapter" data-level="6.6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-summ"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-kt"><i class="fa fa-check"></i><b>6.6.1</b> Keywords</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html"><i class="fa fa-check"></i><b>7</b> GIS and Big Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#pre-7"><i class="fa fa-check"></i><b>7.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#re-7"><i class="fa fa-check"></i><b>7.1.1</b> Readings</a></li>
+<li class="chapter" data-level="7.1.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#lo-7"><i class="fa fa-check"></i><b>7.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#activities-for-module-7"><i class="fa fa-check"></i>Activities for Module 7</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#overview-of-lesson"><i class="fa fa-check"></i><b>7.2</b> Overview of Lesson</a></li>
+<li class="chapter" data-level="7.3" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#live-worked-example-of-geospatial-data-analysis"><i class="fa fa-check"></i><b>7.3</b> Live Worked Example of Geospatial Data Analysis</a></li>
+<li class="chapter" data-level="7.4" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#geospatial-data-and-crime"><i class="fa fa-check"></i><b>7.4</b> Geospatial Data and Crime</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#what-is-crime-data"><i class="fa fa-check"></i><b>7.4.1</b> What is Crime Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-data-as-a-case-of-big-data"><i class="fa fa-check"></i><b>7.5</b> Crime Data as a case of Big Data</a></li>
+<li class="chapter" data-level="7.6" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-statistics-in-city-of-toronto"><i class="fa fa-check"></i><b>7.6</b> Crime Statistics in City of Toronto</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#exercise"><i class="fa fa-check"></i><b>7.6.1</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-summ"><i class="fa fa-check"></i><b>7.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-kt"><i class="fa fa-check"></i><b>7.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html"><i class="fa fa-check"></i><b>8</b> GeoVisualization and Story Maps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#pre-8"><i class="fa fa-check"></i><b>8.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#re-8"><i class="fa fa-check"></i><b>8.1.1</b> Readings</a></li>
+<li class="chapter" data-level="8.1.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#lo-8"><i class="fa fa-check"></i><b>8.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#activities-for-module-8"><i class="fa fa-check"></i>Activities for Module 8</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#what-is-geovisualization"><i class="fa fa-check"></i><b>8.2</b> What is Geovisualization?</a></li>
+<li class="chapter" data-level="8.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#viewing-the-digital-earth"><i class="fa fa-check"></i><b>8.3</b> Viewing the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#one-dimensional-views"><i class="fa fa-check"></i><b>8.3.1</b> One-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#two-dimensional-views"><i class="fa fa-check"></i><b>8.3.2</b> Two-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#three-dimensional-views"><i class="fa fa-check"></i><b>8.3.3</b> Three-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#four-dimensional-views"><i class="fa fa-check"></i><b>8.3.4</b> Four-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#dashboards-views-into-the-digital-earth"><i class="fa fa-check"></i><b>8.3.5</b> Dashboards Views into the Digital Earth</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#earth-system-geovisualization"><i class="fa fa-check"></i><b>8.4</b> Earth System GeoVisualization</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#noaa-view-data-exploration-tool"><i class="fa fa-check"></i><b>8.4.1</b> <span>NOAA View Data Exploration Tool</span></a></li>
+<li class="chapter" data-level="8.4.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#global-climate-dashboard"><i class="fa fa-check"></i><b>8.4.2</b> <span>Global Climate Dashboard</span></a></li>
+<li class="chapter" data-level="8.4.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#arctic-biodiversity-data-service"><i class="fa fa-check"></i><b>8.4.3</b> <span>Arctic Biodiversity Data Service</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#story-maps-digital-earth-storytelling"><i class="fa fa-check"></i><b>8.5</b> Story Maps: Digital Earth Storytelling</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#case-study-city-of-kitchener-lifestyle-segments"><i class="fa fa-check"></i><b>8.5.1</b> Case Study: City of Kitchener Lifestyle Segments</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#the-power-and-limits-of-geovisualization"><i class="fa fa-check"></i><b>8.6</b> The Power and Limits of GeoVisualization</a></li>
+<li class="chapter" data-level="8.7" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-summ"><i class="fa fa-check"></i><b>8.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-kt"><i class="fa fa-check"></i><b>8.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html"><i class="fa fa-check"></i><b>9</b> Term Project and Digital Earth Project Management</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#pre-9"><i class="fa fa-check"></i><b>9.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#re-9"><i class="fa fa-check"></i><b>9.1.1</b> Readings</a></li>
+<li class="chapter" data-level="9.1.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#lo-9"><i class="fa fa-check"></i><b>9.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#activities-for-module-9"><i class="fa fa-check"></i>Activities for Module 9</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#what-is-the-term-project"><i class="fa fa-check"></i><b>9.2</b> What is the Term Project?</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#the-project"><i class="fa fa-check"></i><b>9.2.1</b> The project</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#resources-for-developing-your-project-idea"><i class="fa fa-check"></i><b>9.3</b> Resources for Developing your Project Idea</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-a-google-earth-story---30-minute-activity"><i class="fa fa-check"></i><b>9.3.1</b> Creating a Google Earth Story - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-an-arcgis-online-story-map---30-minute-activity"><i class="fa fa-check"></i><b>9.3.2</b> Creating an ArcGIS Online Story Map - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#importing-and-working-with-gis-data-in-google-earth---30-minute-activity"><i class="fa fa-check"></i><b>9.3.3</b> Importing and Working with GIS Data in Google Earth - 30 minute activity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#planning-your-term-project"><i class="fa fa-check"></i><b>9.4</b> Planning your term project</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#writing-style"><i class="fa fa-check"></i><b>9.4.1</b> Writing Style</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#evaluation"><i class="fa fa-check"></i><b>9.5</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-digital-earth-town-hall.html"><a href="the-digital-earth-town-hall.html"><i class="fa fa-check"></i><b>10</b> The Digital Earth Town Hall</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i>Assignments</a>
+<ul>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-1-assignment"><i class="fa fa-check"></i>Module 1 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-2-assignment"><i class="fa fa-check"></i>Module 2 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-3-assignment"><i class="fa fa-check"></i>Module 3 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-4-assignment"><i class="fa fa-check"></i>Module 4 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-5-assignment"><i class="fa fa-check"></i>Module 5 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-6-assignment"><i class="fa fa-check"></i>Module 6 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-7-assignment"><i class="fa fa-check"></i>Module 7 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-8-assignment"><i class="fa fa-check"></i>Module 8 Assignment</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="action" class="section level1" number="2">
+<h1><span class="header-section-number">Module 2</span> The Digital Earth in Action</h1>
+<div id="pre-2" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Preliminaries</h2>
+<div id="re-2" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Readings</h3>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<p>Readings should be done when referenced during this week’s lesson. Do not read before starting the lesson.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4728606/">Paper using satellite data to monitor water storage</a></li>
+</ol>
+</div>
+<div id="lo-2" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Learning Objectives</h3>
+<p>By the end of this lesson, students will be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Explain how different geospatial datasets can be brought together around a common theme</li>
+<li>Distinguish single-purpose and multi-purpose geospatial data</li>
+<li>Find examples of geospatial applications</li>
+<li>Describe how issues of data quality and bias can impact geospatial data and applications</li>
+</ol>
+</div>
+<div id="activities-for-module-2" class="section level3 unnumbered">
+<h3>Activities for Module 2</h3>
+<ol style="list-style-type: decimal">
+<li>Readings</li>
+<li>Assignment A-M2</li>
+<li>Quiz Q-M2</li>
+</ol>
+Optional: Reading report [3 total for the course], Participation [minimum of 4 total for the course]
+<hr>
+</div>
+</div>
+<div id="the-digital-earth-is-already-here" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> The Digital Earth is Already Here</h2>
+<p>The Digital Earth is part of many aspects of everyday life. As illustrated in week 1, as more and more of our lives are digitized, more data is collected, stored, analyzed, and used to drive decision-making. You often hear ‘evidence-based’ or ‘data-driven’ which often mean some data has been collected and is being analyzed to reveal insights and inform policy, guidelines, or notions about how we should/can act in the world. This applies to our personal lives, as well as our interactions with and management of natural resources, wildlife, public services, and many other facets of life. The so called <em>data-deluge</em> has roots in almost all industries and sectors. As a result, ‘Data Scientists’ has been among the most rapidly growing job titles for the past several years.</p>
+<div id="covid-19-mapping-the-pandemic" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> COVID-19: Mapping the Pandemic</h3>
+<p>You are taking this course, either currently living through or having just experienced the greatest public health crisis the world has seen in over a century. COVID-19 is a truly global scale phenomena. A new virus emerges, has a unique combination of characteristics that make it spread easily. As it is new - no one has immunity, nor is there any baseline knowledge about risk factors, long-term impacts, etc. As such, the response to COVID-19 has been reactive and evolving, as more knowledge is generated about the characteristics of the virus and the disease it causes.</p>
+<div id="maps-and-disease" class="section level4" number="2.2.1.1">
+<h4><span class="header-section-number">2.2.1.1</span> Maps and Disease</h4>
+<p>Mapping has been an integral part of studying epidemics throughout history. Because the trajectory of an infectious disease epidemic often depends on how humans interact, putting cases of disease <em>on the map</em> can provide insights into sites or mechanisms of transmission or sub-populations at greater risk. There is an entire field of geography and statistical analysis devoted to disease mapping, disease cluster detection and understanding of geospatial risk factors of health and disease. In the case of COVID-19, you have likely seen the dashboards that show cases such as the <a href="https://coronavirus.jhu.edu/map.html">John Hopkins University COVID-19 Dashboard</a>, or the <a href="https://www.publichealthontario.ca/data-and-analysis/infectious-disease/covid-19-data-surveillance/covid-19-data-tool">Ontario COVID-19 Data Tool</a>. These tools typically allow you to quickly see where cases are high or low and how they have evolved over time. As we all know firsthand, these sorts of tools become instrumental in the experience of the pandemic and impact behaviours, social dynamics, and ultimately disease transmission itself.</p>
+<p>Consider something as simple as the case count, for example for Waterloo Region as of September 12 2020. According to official data, the <a href="https://public.tableau.com/shared/Z4G9X4ND9?:display_count=y&amp;:origin=viz_share_link&amp;:embed=y">total cumulative case count of COVID-19 cases for this data was 1518 positive cases</a>. Try to think of some questions about the data-generating process that gave rise to this number.</p>
+<p><strong>What critical questions could you ask about these data?</strong></p>
+<blockquote>
+<p>Once you have a few questions click the button below.</p>
+</blockquote>
+<button onclick="myFunction()">
+Show Answer
+</button>
+<div id="myDIV" style="display:none">
+<ul>
+<li>
+Are these cases based on home address or place where test was done or some other geographic criteria? Some groups such as students may have a home address located in another area, but currently reside in Waterloo Region.
+</li>
+<li>
+How many tests that are positive are still active?
+</li>
+<li>
+How accurate is the test? What is the false positive and false negative rate?
+</li>
+<li>
+What are the rules for who can get tested? Can asymptomatic people get tested or only those with symptoms or with a known exposure to a case?
+</li>
+</ul>
+</div>
+<p>Such questions underpin the linkage between the case count (i.e., the number in the data) and the true number of infections within the Region.</p>
+<p><em>Too often when information is presented as <strong>data</strong> key questions about what processes actually led to the number in the data are absent.</em></p>
+<p>In the early phase of the pandemic in the US, only those with travel history to Wuhan (i.e., the origin of the virus) or those who had come into contact with a known infected person qualified to be tested. This narrow definition had the effect of keeping the case count low and thus it could be said it was ‘under control’. Looking back we see the low counts were only because of the restrictive requirements for testing.</p>
+<blockquote>
+<p>The key lesson here is to <em>always scrutinize data</em>, always <em>be critical and ask questions</em> about what decisions and processes went into creating the data - in short: what is the nature of the <strong>data generating process</strong>.</p>
+</blockquote>
+<p>With that in mind - <a href="https://www.nbcnewyork.com/news/national-international/map-watch-the-coronavirus-cases-spread-across-the-world/2303276/">take a look at this <strong>geospatial visualization</strong> of COVID-19 which allows you to start and stop an animation of the global geographic spread.</a></p>
+<div class="figure"><span id="fig:unnamed-chunk-11"></span>
+<img src="images/coronoa.png" alt="Visualization of spread of COVID-19, source: https://www.nbcnewyork.com/ Screenshot taken by Colin Robertson.  Used with permission" width="80%" />
+<p class="caption">
+Figure 2.1: Visualization of spread of COVID-19, source: <a href="https://www.nbcnewyork.com/" class="uri">https://www.nbcnewyork.com/</a> Screenshot taken by Colin Robertson. Used with permission
+</p>
+</div>
+<p><strong>Stop and Do - 1</strong> <br><mark style="background-color: orange"> Examine the geographic spread of the virus using the animation tool linked above. Think critically about what you are seeing. <em>Write down three questions</em> that you could ask to interrogate the data further. </mark></p>
+<hr>
+</div>
+</div>
+</div>
+<div id="critically-thinking-about-geospatial-data" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Critically Thinking about Geospatial Data</h2>
+<p>Any kind of data that can be digitally represented as a geographic distribution (i.e., a map!) must be examined just as critically as the public health data examined above. Geospatial data are the data that underly maps, as well as a whole variety of software programs, apps, web services, etc. Just as we can ask critical questions of the COVID-19 data above, we need to ask questions about geospatial data.</p>
+<div class="tabwid"><table style='border-collapse:collapse;'><thead><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Questions</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Possible Answers</span></p></td></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How were the data collected?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Satellite sensor, digitized, copied from existing geospatial data, GPS, surveying, hand drawn</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Why was the data collected? For what purpose?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">For regular monitoring, as part of a specific study, for commercial purposes, etc.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Are the data 'open' [i.e., free and publicly available]- If not, why?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Yes, No, not sure, its commercial data, privacy reasons, etc.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How were the data processed?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Converted from one format to another, reprojected to a different coordinate system, new derived attributes were computed</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Who is the audience for this map/visualization/application?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">The general public, students, people using public transportation, senior citizens, the military, police forces</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How current are the data?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Today, last year, unknown, last updated June 1 2017, etc.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">What or who is misssing from the data?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">People without a fixed address, people without cell phones, people that live in apartment complexes, rural areas, etc.</span></p></td></tr></tbody></table></div>
+<p>Answering these types of questions takes time and effort. Sometimes geospatial data are purpose-built; meaning they are collected specifically for one purpose and are confined to use in that specific scope. This is what we can call <strong>single-purpose geospatial data</strong>. Consider for example, a property survey of a suburban house. This data could be stored as a <em>vector geospatial dataset</em> - essentially a collection of points, lines, and polygons encoded with geographic information and additional descriptive information. These data will typically serve no other purpose than to provide a digital record for where the property boundaries are located. However, increasingly, geospatial data are applied in a variety of uses. These <strong>multi-purpose geospatial data</strong> can serve a seemingly endless number of applications. Some forms of multi-purpose geospatial data play a role in a wide-number of use-cases, such as a <strong>digital elevation model</strong> (DEM) (which records elevation data) or a <em>land-cover dataset</em> which we saw in Module 1. These data are multi-purpose because they serve as <em>basemap data</em> and many other applications depend on them. For example, DEM data might be used to detect areas at risk of avalanche, to describe the habitat charcteristics where observations of an endangered species have been made, or in evaluating locations suitable for a new industrial facility. Other examples of <strong>basemap geospatial data</strong> include roads, water bodies, building footprints, and aerial imagery.</p>
+<p><strong>Stop and Think - 1</strong> <br><mark style="background-color: lightgreen"> Basemap geospatial data is crucially important to the Digital Earth as these datasets fuel many applications and services. However, there is no agreed-upon standard or source for these essential datasets, rather they are produced by all levels of government, at different levels of detail, using different methods and coordinate systems, and have widely varying degrees of access (i.e., free and open source to commercial data costing thousands of dollars). <strong>Think about why this could cause some problems.</strong> Understanding how to access, evaluate, and integrate appropriate basemap data is a key skill!</mark></p>
+<p>Another form of multi-purpose geospatial data is an emerging type of data that are used for completely different purposes than it was collected for. This type of data is more common in what is typically referred to as <strong>Big Data</strong>. The term <strong>Big Data</strong> - which we will explore in depth in a later week - is often desribed in terms of the ‘three v’s’ - <em>volume</em>, <em>variety</em>, and <em>velocity</em>. Essentially; data that is <em>large in size relative to standard data storage and processing tools</em>, data that are produced in a <em>wide variety of formats</em> and representations (e.g., tabular, image, free-text, video, etc.), and data that are <em>rapidly updated and continuously being collected</em>. To understand how big data intersects with multi-purpose geospatial data we can consider an example; that of mapping the global distribution of ships at sea.</p>
+</div>
+<div id="big-data-example-mapping-global-shipping-patterns" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Big Data Example: Mapping Global Shipping Patterns</h2>
+<div class="figure"><span id="fig:unnamed-chunk-13"></span>
+<img src="images/shio.png" alt="Ship at sea. Image source: [Marco Verch](https://foto.wuestenigel.com/shipping-boat-at-sea/?utm_source=42768176654&amp;utm_campaign=FlickrDescription&amp;utm_medium=link)" width="60%" />
+<p class="caption">
+Figure 2.2: Ship at sea. Image source: <a href="https://foto.wuestenigel.com/shipping-boat-at-sea/?utm_source=42768176654&amp;utm_campaign=FlickrDescription&amp;utm_medium=link">Marco Verch</a>
+</p>
+</div>
+<p>Ships at sea need to communicate with each other, and a system called the Automatic Identification System (AIS) was developed in the 1990s as a way for ships to communicate critical information such as their ship’s identifier, geographic location, speed, and intendend route. Transceivers placed on board ships could communicate this data to other nearby ships (i.e. ship-to-ship) via on-board transceivers or to land-based transceivers (i.e., ship-to-shore). The primary use of AIS in its initial phase was navigation, collision avoidance, and aid in navigation - as an add-on to existing on-board radar. At some point in the mid-2000s it was realized that the AIS signals could be detected from space-borne sensors on satellites. This has led to the growth of a constellation of satellite-AIS (S-AIS) sensors that detect AIS messages and thereby giving an indication of ship location and related metadata. Scaled globally, this means it may be possible to map ship location in real-time for the entire earth; this is an example of big geospatial data.</p>
+<p>One of the leading companies in S-AIS, <a href="https://www.exactearth.com/">Exact Earth Corp.</a> is actually based in Waterloo Region. See how they market their S-AIS data and how it relates to different <em>geospatial applications</em> in the short video below. Pay attention to what problems and/or issues this one global geospatial dataset is being applied to.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4_L2GQSiehI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>One of the often-touted benefits of big data is its potential for hidden insights into processes which would otherwise go unknown. The story of S-AIS and evolution of global-scale ship monitoring from space is a perfect example of new use-cases can emerge from big data. For example, researchers have used S-AIS data to detect illegal fishing and as part of maritime surveillance for piracy.</p>
+<p>There are many secondary web applications that make use of A-AIS data, <a href="https://www.marinetraffic.com/en/ais/home/centerx:-79.6/centery:43.9/zoom:7">for example Marinetraffic.com. Explore the web-map here</a>.</p>
+<ul>
+<li>Click on a few ships and explore the rich attributes that are tracked for each vessel.</li>
+<li>Try click on the Past Track button of a vessel to see where it has been.</li>
+<li>Explore some of the options in the user interface.</li>
+</ul>
+<p>Gaining this synoptic scale view of marine vessels has many benefits and uses, as noted in the Exact Earth video above. Seeing the data in map form also tends to lead to questions about spatial distribution:</p>
+<p><em>Why are there lots of points here and none there?
+</em> Do bulk carriers use the same routes as non-commercial ships?
+* What regions have higher risks of collisions, etc.</p>
+<p>These questions can be answered through the techniques of <strong>spatial analysis</strong>.</p>
+<p><strong>Stop and Do - 2</strong> <br><mark style="background-color: orange"> Take some time to explore the <a href="http://www.marinetraffic.com">marinetraffic.com website</a> which also includes rich data on ports, ships, shipping lanes, and other related factors. Some of these data are contributed by users (i.e., crowdsourced) while others are culled from other existing datasets. This represents a great example of a Digital Earth application, utizliing extensive geospatial data around a common theme. <em>Write down one way these different types of data could be used together</em> to help solve a problem or answer a question. </mark></p>
+<p>Take some time to explore the marinetraffic.com website which also includes rich data on ports, ships, shipping lanes, and other related factors. Some of these data are contributed by users (i.e., crowdsourced) while others are culled from other existing datasets. This represents a great example of a Digital Earth application, utizliing extensive geospatial data around a common theme.</p>
+<div class="figure"><span id="fig:unnamed-chunk-14"></span>
+<img src="images/mt.png" alt="Screenshot of webmap at global ship tracking website, source: https://www.marinetraffic.com/" width="80%" />
+<p class="caption">
+Figure 2.3: Screenshot of webmap at global ship tracking website, source: <a href="https://www.marinetraffic.com/" class="uri">https://www.marinetraffic.com/</a>
+</p>
+</div>
+<p>However, as we noted earlier it is also important to apply a critical lens to the claims made by such data vendors. We can now ask some of the key questions noted above to this S-AIS global dataset:</p>
+<div class="tabwid"><table style='border-collapse:collapse;'><thead><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Questions</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Possible Answers</span></p></td></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How were the data collected?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Satellite-borne sensor picking up AIS messages transmitted from ships at sea</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Why was the data collected? For what purpose?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">The AIS messages exist primarily for navigation purposes</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Are the data 'open' [i.e., free and publicly available]- if not, why?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">These are commercial data, viewable publicly but must be purchased to access the data</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How were the data processed?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">S-AIS data go through a series of data processing steps. The messages are located within general regions of the earth where the messages from many ships might be simultaneously detected. S-AIS system has to organize messages in order and transmit the message data (as 256 bit slots) down to a base station where it can be decoded and reformatted as tabular data. The exact details for how message data are processed are commercial proprietary information.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Who is the audience for this map/visualization/application?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Answer in your notebook</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">How current are the data?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Answer in your notebook</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">What or who could be missing from the data?</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Answer in your notebook</span></p></td></tr></tbody></table></div>
+<hr>
+</div>
+<div id="weather-prediction-in-the-digital-earth-era" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Weather Prediction in the Digital Earth Era</h2>
+<p>Weather prediction is perhaps the most fundamental, immediately useful application of the Digital Earth. We depend on weather apps on our phones, on the Internet, and in the media to help plan our days and weeks. These are vital sources of information for everday life, as well as for critical industries like agriculture.</p>
+<p>What our simple apps and websites hide is the fact that weather forecasts are the outputs of complex computer models of atmospheric processes. Inherent in weather forecasts are questions of scale. When we talk about <strong>scale</strong> in geography or environmental studies, we typically mean the <em>level</em> at which a process is operating.</p>
+<p>Common scales might be generic terms like local, regional and global. In geospatial and Digital Earth applications, scale is typically described in terms of <strong>spatial grain</strong>, or the smallest size object that can be resolved by a sensor. For example, a sensor that can measure up to a 5 m road width in a single pixel would have a nominal spatial resolution of 5 m. We can also categorize spatial grain size in terms of resolutions: low resolution, medium resolution, high resolution which map onto linear dimensions of pixel sizes in geospatial data, such as 25 km, 1 km, and 10 m respectively.</p>
+<p>Weather forecasts are the result of computer models which combine physical models of ocean and atmosphere processes into different iterations of possible weather, in order to generate scenarios extending into the future for a desired amount of time. As we all know, the 1-3 day forecast is generally more accurate than the 16-day forecast, as there is less uncertainty the shorter the forecast period is.</p>
+<p>To highlight just how much work goes into our daily forecast - we can briefly review the Global Ensemble Prediction System, which encapsulates physical processes in the ocean and atmosphere variables such as temperature, precipitation, cloud cover, wind speed and direction, and humidity up to 16 days into the future. These processes are modelled on a global grid with a resolution of 0.35 degree (roughly 39 km at Equator). This means each <em>pixel</em> or <em>grid cell</em> covers an area roughly 40 km x 40 km - a fairly large area. This also means that any weather variability within that 40 km x 40 km grid cell footprint is lost. This system include geospatial data on sea ice, sea surface temperature, surface and deep soil temperature and moisture, snow depth, snow albedo and snow density, and many other related physical variables. These models are extremely complex, combining surface observations with models of physical processes and their uncertainties. Each dataset within these systems can be thought of as a hidden layer of the Digital Earth, working in the background to combine with other datasets and models to produce the weather forecasts we use everyday. We can take a deeper look at the data used by Environment Canada on <a href="https://eccc-msc.github.io/open-data/msc-data/readme_en/">their Open Data site</a>.</p>
+<p><strong>Stop and Do - 3</strong> <br><mark style="background-color: orange"> <a href="https://eccc-msc.github.io/open-data/usage/tutorial_WMS_QGIS_en/">Read through one of the tutorials</a> showing how to work with the Environment Canada in the open source GIS software package <a href="https://qgis.org/en/site/">QIS</a>. This shows how you can actually work with geospatial data to answer new questions - rather than just looking at pre-generated results. </mark></p>
+<p><mark style="background-color: orange"><strong>What is meant by the term <em>in situ observations</em>?</strong></mark></p>
+<p><mark style="background-color: orange">OPTIONAL: If you are up for it, try downloading and installing QGIS and try to run through the tutorial.</mark></p>
+<hr>
+</div>
+<div id="the-digital-earth-basemaps---resources-to-explore" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> The Digital Earth Basemaps - Resources to Explore</h2>
+<p>Have a look at the following Digital Earth geospatial datasets. As you explore, try to think about what these might be used for, how the data is measured, and potential issues or sources of bias in using them for particular purposes.</p>
+<div id="terrestrial-water-storage" class="section level3" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Terrestrial Water Storage</h3>
+<p><a href="https://grace.jpl.nasa.gov/data-analysis-tool/">NASA Gravity Recovery and Climate Experiment (GRACE) Data Analysis Tool (DAT)</a></p>
+<p><strong>Stop and Do - 4</strong> <br><mark style="background-color: orange"> 📖 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4728606/">Read a related paper</a> using the GRACE TWS data.<br />
+<strong>What is happening in Figure 1? What happened in Texas in 2011? How was this detected?</strong>
+</mark></p>
+</div>
+<div id="snow" class="section level3" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> Snow</h3>
+<p><a href="https://www.globsnow.info/">GlobeSnow</a> project for snow-water equivalent (i.e., volume of water stored in the snowpack)</p>
+</div>
+<div id="human-settlements" class="section level3" number="2.6.3">
+<h3><span class="header-section-number">2.6.3</span> Human Settlements</h3>
+<p><a href="https://sos.noaa.gov/datasets/nighttime-lights/">Night time lights</a></p>
+</div>
+<div id="disease-outbreaks" class="section level3" number="2.6.4">
+<h3><span class="header-section-number">2.6.4</span> Disease Outbreaks</h3>
+<p><a href="https://healthmap.org/en/">Health Map</a></p>
+</div>
+<div id="economic-inequality" class="section level3" number="2.6.5">
+<h3><span class="header-section-number">2.6.5</span> Economic Inequality</h3>
+<p><a href="https://ourworldindata.org/grapher/gdp-per-capita-worldbank">GDP per Capita</a></p>
+<hr>
+</div>
+</div>
+<div id="m2-summ" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> Summary</h2>
+<p>Our goal this week was to explore how the Digital Earth and its related tools and technologies are being used today. We have seen that in everything from weather forecasting to global ship monitoring, digital representations of how natural and social processes are distributed geographically are critical. We have also highlighted how the same geospatial datasets can be reused for a wide variety of practical applications. A digital elevation model for example, can be used for many different studies and applications because surface elevation is such an important component of many different fields.</p>
+<p>We have also reviewed how we can ask critical questions of Digital Earth data, and to understand that behind simple outputs might be many different models and datasets with their own biases, subjective decisions, and data quality limitations. As such, to become critical consumers of the Digital Earth, we need to ask questions about data source, processing, scale, why data were created, and how current data are.</p>
+<p>Geospatial data can create compelling visualizations and tools that allow you to explore the Digital Earth (e.g., marine traffic providing a digital window into global shipping); but this can also obscure what is missing or mis-represented. But the Digital Earth is more than digital geospatial data, it is the tying together of data and applications into a comprehensive earth system; capable of answering questions about the current, past, and future states of earth’s ecosystems, atmoshphere, oceans, and people. We are only at the beginning of realizing this Digital Earth vision.</p>
+<div id="m2-kt" class="section level3" number="2.7.1">
+<h3><span class="header-section-number">2.7.1</span> Key Terms</h3>
+<ul>
+<li>data generating process</li>
+<li>single-purpose geospatial data</li>
+<li>multi-purpose geospatial data</li>
+<li>basemap geospatial data</li>
+<li>digital elevation model</li>
+<li>big data</li>
+<li>scale</li>
+<li>in-situ observations</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-view-from-above-satellite-imagery-for-earth-observation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-applied.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

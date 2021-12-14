@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 3 The View from Above: Satellite Imagery for Earth Observation | index.split</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 3 The View from Above: Satellite Imagery for Earth Observation | index.split" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 3 The View from Above: Satellite Imagery for Earth Observation | index.split" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="action.html"/>
+<link rel="next" href="the-view-from-the-ground-citizen-science-and-community-mapping.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/threejs-111/three.min.js"></script>
+<script src="libs/threejs-111/Detector.js"></script>
+<script src="libs/threejs-111/Projector.js"></script>
+<script src="libs/threejs-111/CanvasRenderer.js"></script>
+<script src="libs/globe-binding-0.3.3/globe.js"></script>
+<link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+<script src="libs/tabwid-1.0.0/tabwid.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 151: Our Digital Earth</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-goal-and-learning-outcomes"><i class="fa fa-check"></i>Course Goal and Learning Outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies-used-in-this-course"><i class="fa fa-check"></i>Case studies used in this course</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-readings"><i class="fa fa-check"></i>Course readings</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-this-course-is-structured"><i class="fa fa-check"></i>How this course is structured</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#pre-1"><i class="fa fa-check"></i><b>1.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#re-1"><i class="fa fa-check"></i><b>1.1.1</b> Readings</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#lo-1"><i class="fa fa-check"></i><b>1.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#activities-for-module-1"><i class="fa fa-check"></i>Activities for Module 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#digital-earth-today"><i class="fa fa-check"></i><b>1.2</b> Digital Earth Today</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#whatis"><i class="fa fa-check"></i><b>1.3</b> What is the Digital Earth</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#physical"><i class="fa fa-check"></i><b>1.4</b> From the Physical to the Digital Earth</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#themes"><i class="fa fa-check"></i><b>1.5</b> Themes, Layers, and Abstractions of Reality</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="intro.html"><a href="intro.html#abstractions-of-space"><i class="fa fa-check"></i><b>1.5.1</b> Abstractions of Space</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#career"><i class="fa fa-check"></i><b>1.6</b> The Digital Earth Career Path</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#m1-summ"><i class="fa fa-check"></i><b>1.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="intro.html"><a href="intro.html#m1-kt"><i class="fa fa-check"></i><b>1.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="action.html"><a href="action.html"><i class="fa fa-check"></i><b>2</b> The Digital Earth in Action</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="action.html"><a href="action.html#pre-2"><i class="fa fa-check"></i><b>2.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="action.html"><a href="action.html#re-2"><i class="fa fa-check"></i><b>2.1.1</b> Readings</a></li>
+<li class="chapter" data-level="2.1.2" data-path="action.html"><a href="action.html#lo-2"><i class="fa fa-check"></i><b>2.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="action.html"><a href="action.html#activities-for-module-2"><i class="fa fa-check"></i>Activities for Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="action.html"><a href="action.html#the-digital-earth-is-already-here"><i class="fa fa-check"></i><b>2.2</b> The Digital Earth is Already Here</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="action.html"><a href="action.html#covid-19-mapping-the-pandemic"><i class="fa fa-check"></i><b>2.2.1</b> COVID-19: Mapping the Pandemic</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="action.html"><a href="action.html#critically-thinking-about-geospatial-data"><i class="fa fa-check"></i><b>2.3</b> Critically Thinking about Geospatial Data</a></li>
+<li class="chapter" data-level="2.4" data-path="action.html"><a href="action.html#big-data-example-mapping-global-shipping-patterns"><i class="fa fa-check"></i><b>2.4</b> Big Data Example: Mapping Global Shipping Patterns</a></li>
+<li class="chapter" data-level="2.5" data-path="action.html"><a href="action.html#weather-prediction-in-the-digital-earth-era"><i class="fa fa-check"></i><b>2.5</b> Weather Prediction in the Digital Earth Era</a></li>
+<li class="chapter" data-level="2.6" data-path="action.html"><a href="action.html#the-digital-earth-basemaps---resources-to-explore"><i class="fa fa-check"></i><b>2.6</b> The Digital Earth Basemaps - Resources to Explore</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="action.html"><a href="action.html#terrestrial-water-storage"><i class="fa fa-check"></i><b>2.6.1</b> Terrestrial Water Storage</a></li>
+<li class="chapter" data-level="2.6.2" data-path="action.html"><a href="action.html#snow"><i class="fa fa-check"></i><b>2.6.2</b> Snow</a></li>
+<li class="chapter" data-level="2.6.3" data-path="action.html"><a href="action.html#human-settlements"><i class="fa fa-check"></i><b>2.6.3</b> Human Settlements</a></li>
+<li class="chapter" data-level="2.6.4" data-path="action.html"><a href="action.html#disease-outbreaks"><i class="fa fa-check"></i><b>2.6.4</b> Disease Outbreaks</a></li>
+<li class="chapter" data-level="2.6.5" data-path="action.html"><a href="action.html#economic-inequality"><i class="fa fa-check"></i><b>2.6.5</b> Economic Inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="action.html"><a href="action.html#m2-summ"><i class="fa fa-check"></i><b>2.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="action.html"><a href="action.html#m2-kt"><i class="fa fa-check"></i><b>2.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html"><i class="fa fa-check"></i><b>3</b> The View from Above: Satellite Imagery for Earth Observation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#pre-3"><i class="fa fa-check"></i><b>3.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#re-3"><i class="fa fa-check"></i><b>3.1.1</b> Readings</a></li>
+<li class="chapter" data-level="3.1.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#lo-3"><i class="fa fa-check"></i><b>3.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#activities-for-module-3"><i class="fa fa-check"></i>Activities for Module 3</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#what-is-earth-observation"><i class="fa fa-check"></i><b>3.2</b> What is Earth Observation?</a></li>
+<li class="chapter" data-level="3.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process"><i class="fa fa-check"></i><b>3.3</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#satellites"><i class="fa fa-check"></i><b>3.3.1</b> Satellites</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process-1"><i class="fa fa-check"></i><b>3.4</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>3.4.1</b> Sensors</a></li>
+<li class="chapter" data-level="3.4.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data"><i class="fa fa-check"></i><b>3.4.2</b> Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#analysis"><i class="fa fa-check"></i><b>3.4.3</b> Analysis</a></li>
+<li class="chapter" data-level="3.4.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#decision-making"><i class="fa fa-check"></i><b>3.4.4</b> Decision-Making</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#crop-monitoring-in-canada---earth-observation-in-action-i"><i class="fa fa-check"></i><b>3.5</b> Crop Monitoring in Canada - Earth Observation in Action I</a></li>
+<li class="chapter" data-level="3.6" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#earth-observation-data-for-digital-earth"><i class="fa fa-check"></i><b>3.6</b> Earth Observation Data for Digital Earth</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#hyperspectral-data"><i class="fa fa-check"></i><b>3.6.1</b> Hyperspectral Data</a></li>
+<li class="chapter" data-level="3.6.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data-cubes"><i class="fa fa-check"></i><b>3.6.2</b> Data Cubes</a></li>
+<li class="chapter" data-level="3.6.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#google-earth-engine-and-data-analytic-pipelines"><i class="fa fa-check"></i><b>3.6.3</b> Google Earth Engine and Data-Analytic Pipelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#high-resolution-imaging"><i class="fa fa-check"></i><b>3.7</b> High Resolution Imaging</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#object-based-image-analysis"><i class="fa fa-check"></i><b>3.7.1</b> Object-based image analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#monitoring-forest-carbon-from-space---earth-observation-in-action-ii"><i class="fa fa-check"></i><b>3.8</b> Monitoring Forest Carbon from Space - Earth Observation in Action II</a></li>
+<li class="chapter" data-level="3.9" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-summ"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-kt"><i class="fa fa-check"></i><b>3.9.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html"><i class="fa fa-check"></i><b>4</b> The View from the Ground: Citizen Science and Community Mapping</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#pre-4"><i class="fa fa-check"></i><b>4.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#re-4"><i class="fa fa-check"></i><b>4.1.1</b> Readings</a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#lo-4"><i class="fa fa-check"></i><b>4.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#activities-for-module-4"><i class="fa fa-check"></i>Activities for Module 4</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#this-digital-earth-includes-people"><i class="fa fa-check"></i><b>4.2</b> This Digital Earth includes People</a></li>
+<li class="chapter" data-level="4.3" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#citizen-science-empowering-people-through-mapping"><i class="fa fa-check"></i><b>4.3</b> Citizen Science: Empowering people through mapping</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#openstreetmaps-osm"><i class="fa fa-check"></i><b>4.3.1</b> OpenStreetMaps (OSM)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#crowdsourcing-case-study-rinkwatch"><i class="fa fa-check"></i><b>4.3.2</b> Crowdsourcing Case Study: RinkWatch</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#community-mapping"><i class="fa fa-check"></i><b>4.4</b> Community Mapping</a></li>
+<li class="chapter" data-level="4.5" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#augmented-reality"><i class="fa fa-check"></i><b>4.5</b> Augmented Reality</a></li>
+<li class="chapter" data-level="4.6" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#covid-contact-tracing-as-participatory-location-based-services"><i class="fa fa-check"></i><b>4.6</b> COVID Contact Tracing as Participatory Location-based Services</a></li>
+<li class="chapter" data-level="4.7" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-summ"><i class="fa fa-check"></i><b>4.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-kt"><i class="fa fa-check"></i><b>4.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html"><i class="fa fa-check"></i><b>5</b> GPS and Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#pre-5"><i class="fa fa-check"></i><b>5.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#re-5"><i class="fa fa-check"></i><b>5.1.1</b> Readings</a></li>
+<li class="chapter" data-level="5.1.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#lo-5"><i class="fa fa-check"></i><b>5.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#activities-for-module-5"><i class="fa fa-check"></i>Activities for Module 5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#what-is-gps"><i class="fa fa-check"></i><b>5.2</b> What is GPS?</a></li>
+<li class="chapter" data-level="5.3" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#how-gps-works"><i class="fa fa-check"></i><b>5.3</b> How GPS Works</a></li>
+<li class="chapter" data-level="5.4" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#wayfinding"><i class="fa fa-check"></i><b>5.4</b> Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#characteristics-of-wayfinding"><i class="fa fa-check"></i><b>5.4.1</b> Characteristics of Wayfinding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#ethical-issues-of-gps-tracking"><i class="fa fa-check"></i><b>5.5</b> Ethical Issues of GPS Tracking</a></li>
+<li class="chapter" data-level="5.6" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-summ"><i class="fa fa-check"></i><b>5.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-kt"><i class="fa fa-check"></i><b>5.6.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html"><i class="fa fa-check"></i><b>6</b> Unmanned Aerial Systems for Earth Observations</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#pre-6"><i class="fa fa-check"></i><b>6.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#re-6"><i class="fa fa-check"></i><b>6.1.1</b> Readings</a></li>
+<li class="chapter" data-level="6.1.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#lo-6"><i class="fa fa-check"></i><b>6.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#activities-for-module-6"><i class="fa fa-check"></i>Activities for Module 6</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uas-for-mapping"><i class="fa fa-check"></i><b>6.2</b> UAS for Mapping</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#platforms"><i class="fa fa-check"></i><b>6.2.1</b> Platforms</a></li>
+<li class="chapter" data-level="6.2.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>6.2.2</b> Sensors</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#d-mapping-from-uas"><i class="fa fa-check"></i><b>6.3</b> 3D Mapping from UAS</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#structure-from-motion-photogrammetry"><i class="fa fa-check"></i><b>6.3.1</b> Structure from Motion Photogrammetry</a></li>
+<li class="chapter" data-level="6.3.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#case-study-drones-for-mapping-snow-in-northern-canada"><i class="fa fa-check"></i><b>6.3.2</b> Case Study: Drones for mapping snow in northern Canada</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-mapping-project-planning"><i class="fa fa-check"></i><b>6.4</b> UAV Mapping Project Planning</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-flight-planning"><i class="fa fa-check"></i><b>6.4.1</b> UAV Flight Planning</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#regulations-for-using-uav-for-mapping-in-canada"><i class="fa fa-check"></i><b>6.5</b> Regulations for using UAV for mapping in Canada</a></li>
+<li class="chapter" data-level="6.6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-summ"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-kt"><i class="fa fa-check"></i><b>6.6.1</b> Keywords</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html"><i class="fa fa-check"></i><b>7</b> GIS and Big Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#pre-7"><i class="fa fa-check"></i><b>7.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#re-7"><i class="fa fa-check"></i><b>7.1.1</b> Readings</a></li>
+<li class="chapter" data-level="7.1.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#lo-7"><i class="fa fa-check"></i><b>7.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#activities-for-module-7"><i class="fa fa-check"></i>Activities for Module 7</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#overview-of-lesson"><i class="fa fa-check"></i><b>7.2</b> Overview of Lesson</a></li>
+<li class="chapter" data-level="7.3" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#live-worked-example-of-geospatial-data-analysis"><i class="fa fa-check"></i><b>7.3</b> Live Worked Example of Geospatial Data Analysis</a></li>
+<li class="chapter" data-level="7.4" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#geospatial-data-and-crime"><i class="fa fa-check"></i><b>7.4</b> Geospatial Data and Crime</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#what-is-crime-data"><i class="fa fa-check"></i><b>7.4.1</b> What is Crime Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-data-as-a-case-of-big-data"><i class="fa fa-check"></i><b>7.5</b> Crime Data as a case of Big Data</a></li>
+<li class="chapter" data-level="7.6" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-statistics-in-city-of-toronto"><i class="fa fa-check"></i><b>7.6</b> Crime Statistics in City of Toronto</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#exercise"><i class="fa fa-check"></i><b>7.6.1</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-summ"><i class="fa fa-check"></i><b>7.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-kt"><i class="fa fa-check"></i><b>7.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html"><i class="fa fa-check"></i><b>8</b> GeoVisualization and Story Maps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#pre-8"><i class="fa fa-check"></i><b>8.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#re-8"><i class="fa fa-check"></i><b>8.1.1</b> Readings</a></li>
+<li class="chapter" data-level="8.1.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#lo-8"><i class="fa fa-check"></i><b>8.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#activities-for-module-8"><i class="fa fa-check"></i>Activities for Module 8</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#what-is-geovisualization"><i class="fa fa-check"></i><b>8.2</b> What is Geovisualization?</a></li>
+<li class="chapter" data-level="8.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#viewing-the-digital-earth"><i class="fa fa-check"></i><b>8.3</b> Viewing the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#one-dimensional-views"><i class="fa fa-check"></i><b>8.3.1</b> One-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#two-dimensional-views"><i class="fa fa-check"></i><b>8.3.2</b> Two-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#three-dimensional-views"><i class="fa fa-check"></i><b>8.3.3</b> Three-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#four-dimensional-views"><i class="fa fa-check"></i><b>8.3.4</b> Four-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#dashboards-views-into-the-digital-earth"><i class="fa fa-check"></i><b>8.3.5</b> Dashboards Views into the Digital Earth</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#earth-system-geovisualization"><i class="fa fa-check"></i><b>8.4</b> Earth System GeoVisualization</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#noaa-view-data-exploration-tool"><i class="fa fa-check"></i><b>8.4.1</b> <span>NOAA View Data Exploration Tool</span></a></li>
+<li class="chapter" data-level="8.4.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#global-climate-dashboard"><i class="fa fa-check"></i><b>8.4.2</b> <span>Global Climate Dashboard</span></a></li>
+<li class="chapter" data-level="8.4.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#arctic-biodiversity-data-service"><i class="fa fa-check"></i><b>8.4.3</b> <span>Arctic Biodiversity Data Service</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#story-maps-digital-earth-storytelling"><i class="fa fa-check"></i><b>8.5</b> Story Maps: Digital Earth Storytelling</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#case-study-city-of-kitchener-lifestyle-segments"><i class="fa fa-check"></i><b>8.5.1</b> Case Study: City of Kitchener Lifestyle Segments</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#the-power-and-limits-of-geovisualization"><i class="fa fa-check"></i><b>8.6</b> The Power and Limits of GeoVisualization</a></li>
+<li class="chapter" data-level="8.7" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-summ"><i class="fa fa-check"></i><b>8.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-kt"><i class="fa fa-check"></i><b>8.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html"><i class="fa fa-check"></i><b>9</b> Term Project and Digital Earth Project Management</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#pre-9"><i class="fa fa-check"></i><b>9.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#re-9"><i class="fa fa-check"></i><b>9.1.1</b> Readings</a></li>
+<li class="chapter" data-level="9.1.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#lo-9"><i class="fa fa-check"></i><b>9.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#activities-for-module-9"><i class="fa fa-check"></i>Activities for Module 9</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#what-is-the-term-project"><i class="fa fa-check"></i><b>9.2</b> What is the Term Project?</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#the-project"><i class="fa fa-check"></i><b>9.2.1</b> The project</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#resources-for-developing-your-project-idea"><i class="fa fa-check"></i><b>9.3</b> Resources for Developing your Project Idea</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-a-google-earth-story---30-minute-activity"><i class="fa fa-check"></i><b>9.3.1</b> Creating a Google Earth Story - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-an-arcgis-online-story-map---30-minute-activity"><i class="fa fa-check"></i><b>9.3.2</b> Creating an ArcGIS Online Story Map - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#importing-and-working-with-gis-data-in-google-earth---30-minute-activity"><i class="fa fa-check"></i><b>9.3.3</b> Importing and Working with GIS Data in Google Earth - 30 minute activity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#planning-your-term-project"><i class="fa fa-check"></i><b>9.4</b> Planning your term project</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#writing-style"><i class="fa fa-check"></i><b>9.4.1</b> Writing Style</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#evaluation"><i class="fa fa-check"></i><b>9.5</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-digital-earth-town-hall.html"><a href="the-digital-earth-town-hall.html"><i class="fa fa-check"></i><b>10</b> The Digital Earth Town Hall</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i>Assignments</a>
+<ul>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-1-assignment"><i class="fa fa-check"></i>Module 1 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-2-assignment"><i class="fa fa-check"></i>Module 2 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-3-assignment"><i class="fa fa-check"></i>Module 3 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-4-assignment"><i class="fa fa-check"></i>Module 4 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-5-assignment"><i class="fa fa-check"></i>Module 5 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-6-assignment"><i class="fa fa-check"></i>Module 6 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-7-assignment"><i class="fa fa-check"></i>Module 7 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-8-assignment"><i class="fa fa-check"></i>Module 8 Assignment</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-view-from-above-satellite-imagery-for-earth-observation" class="section level1" number="3">
+<h1><span class="header-section-number">Module 3</span> The View from Above: Satellite Imagery for Earth Observation</h1>
+<div id="pre-3" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preliminaries</h2>
+<div id="re-3" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Readings</h3>
+<p>Readings should be done when referenced during this week’s lesson. Do not read before starting the lesson.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.youtube.com/watch?v=jxfA4WaYPrc&amp;ab_channel=Planet">2018 Keynote on the Queryable Earth, 45 min video</a></li>
+<li><a href="https://www.usgs.gov/faqs/what-are-best-landsat-spectral-bands-use-my-research?qt-news_science_products=0#qt-news_science_products">Spectral bands in Landsat images</a></li>
+<li><a href="https://eos.com/blog/satellite-data-what-spatial-resolution-is-enough-for-you/">Blog post which compares high and moderate resolution imagery</a></li>
+</ol>
+</div>
+<div id="lo-3" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Learning Objectives</h3>
+<p>By the end of this lesson, students will be able to:</p>
+<ol style="list-style-type: decimal">
+<li>List advantages of earth observation from space</li>
+<li>Define spatial and temporal resolution associated with satellite image data</li>
+<li>Understand what image classification is</li>
+<li>Provide two examples of geospatial applications using satellite imgery</li>
+<li>Describe how high resolution image data differs from other types of image data</li>
+</ol>
+</div>
+<div id="activities-for-module-3" class="section level3 unnumbered">
+<h3>Activities for Module 3</h3>
+<ol style="list-style-type: decimal">
+<li>Readings</li>
+<li>Assignment A-M3</li>
+<li>Quiz Q-M3</li>
+</ol>
+<p>Optional: Reading report [3 total for the course], Participation [minimum of 4 total for the course]</p>
+<script>
+function myFunction3() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+<hr>
+<!-- Week 3 -->
+</div>
+</div>
+<div id="what-is-earth-observation" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> What is Earth Observation?</h2>
+<p>Earth observation (EO) is the processes and technologies for recording earth information from space. Typically EO is part of programs run by national space agencies such as the <a href="https://www.asc-csa.gc.ca/eng/Default.asp">Canadian Space Agency (CSA)</a> in Canada or the <a href="https://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a> in the US. EO programs are designed to acquire information about the earth or the atmosphere and repeatedly sense regions of the planet to support the monitoring of change-over-time. EO is a subfield of the broader field of <strong>remote sensing</strong> which pertains to any kind of observation-from-a-distance, including drone-based image acquisition, aerial photography, <a href="https://en.wikipedia.org/wiki/Kite_aerial_photography">even photography from kites</a>! <a href="https://academic-calendar.wlu.ca/course.php?c=52301&amp;cal=1&amp;d=2031&amp;s=931&amp;y=79">There is a third-year class devoted completely to remote sensing in GES department.</a> as part of our Geomatics Option.</p>
+<p>You actually already have some experience working with EO data. When you explored the landcover map in Week 1, that map was derived from EO data (from the Landsat sensor), which was produced by Canada Centre for Mapping and Earth Observation. There is a difference in terminology we should highlight here.</p>
+<ul>
+<li>A <strong>map</strong> is a visual depiction of a geographic variable or region of interest. EO does not automatically produce maps, rather</li>
+<li>EO technologies produce <strong>image data</strong>. <strong>Image data</strong> is direct physical measurements obtained by a sensor.</li>
+</ul>
+<p>The simplest form of EO is analogous to taking a photograph from space, in which the sensor is sensing reflected visible light. The photo-taking device is the sensor, and in EO it is mounted on a platform, which is usually a satellite in a defined orbit.</p>
+</div>
+<div id="the-earth-observation-process" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> The Earth Observation Process</h2>
+<div id="satellites" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Satellites</h3>
+<p>Satellite imaging of earth has been going on since the late 1950’s with the launch of the first satellites by the USSR and USA. The advantages of earth observation from space as opposed to from cameras mounted on aircraft which had been (and continues to be) a dominant form of remote sensing became apparent immediately. Aerial photography as the basis for generating geographic base data for mapping requires a designated flight campaign in support of it. As such, aerial photography is expensive, periodic, and more variable.</p>
+<p>Satellite-based EO is extremely costly and can only really be undertaken by national government agencies and large corporations, however – once a program is in place data access can range from free to thousands of dollars per image. More importantly, satellites are placed into fixed orbits and have sensors that usually have regular schedules for acquiring images.</p>
+<div class="figure"><span id="fig:unnamed-chunk-17"></span>
+<img src="images/geo.png" alt="Three orbits used in earth observation satellites, [NASA illustration by Robert Simmon](https://earthobservatory.nasa.gov/ContentFeature/OrbitsCatalog/images/orbit_velocities.png), Freely available for use." width="80%" />
+<p class="caption">
+Figure 3.1: Three orbits used in earth observation satellites, <a href="https://earthobservatory.nasa.gov/ContentFeature/OrbitsCatalog/images/orbit_velocities.png">NASA illustration by Robert Simmon</a>, Freely available for use.
+</p>
+</div>
+<p>There are two orbits used in EO, noted in the figure above. A sun-synchronous orbit is at an altitude of 705 km, where sensors on satellites track the sunlit side of the earth in order to track visible light reflected from the earth. For sun-synchronous orbits a key property is how long they take to revisit the same location on earth. This is important for land monitoring and can have a critical impact on what type of monitoring we can do with the image data generated by the sensor. This property is called the <strong>revisit time</strong> or the <strong>temporal resolution</strong>. Revisit times are related to the swath width of the sensor (i.e., how wide an individual scene is). For higher resolution sensors, they tend to have smaller swath widths and longer revisit times, whereas lower resolution sensors have larger swath widths and shorter revisit times.</p>
+<p>A geostationary orbit tracks the same position on earth as the earth revolves around its access. Geostationary orbits sit at altitudes of approximately 35,000 km. EO satellites that sense in the visible range of the spectrum are in sun synchronous orbits.</p>
+<p>How spatial and temporal resolution combine to determine which applications can be targetted by a given EO sensor is a critical issue. You - as the EO expert - must be aware of all of the considerations in making the selection of appropriate imagery. A generic representation of this is provided in the figure below. Note that the axes are on <a href="https://en.wikipedia.org/wiki/Logarithmic_scale">logarithmic scales</a>, so changes at lower ends of the scale are different from changes at the upper end of the scale. Try to make sense of this before moving on.</p>
+<div class="figure"><span id="fig:unnamed-chunk-18"></span>
+<img src="images/resolution-app.png" alt="How different temporal and spatial resolutions common in earth observation relate to geospatial applications they can be used on (Source: [Jensen (2007)](https://www.pearson.com/us/higher-education/program/Jensen-Remote-Sensing-of-the-Environment-An-Earth-Resource-Perspective-2nd-Edition/PGM200207.html))" width="80%" />
+<p class="caption">
+Figure 3.2: How different temporal and spatial resolutions common in earth observation relate to geospatial applications they can be used on (Source: <a href="https://www.pearson.com/us/higher-education/program/Jensen-Remote-Sensing-of-the-Environment-An-Earth-Resource-Perspective-2nd-Edition/PGM200207.html">Jensen (2007)</a>)
+</p>
+</div>
+<p><strong>Stop and Do - 1</strong> <br><mark style="background-color: orange"> Select two applications and provide an explanation for why they are linked with the spatial and temporal resolutions that they are in the image above.
+.</mark></p>
+<hr>
+</div>
+</div>
+<div id="the-earth-observation-process-1" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> The Earth Observation Process</h2>
+We will now overview the following core components of the earth observation process.
+<div class="figure"><span id="fig:unnamed-chunk-19"></span>
+<img src="images/rsprocess.png" alt="The earth observation process components are sensors, data, analysis and decision-making." width="80%" />
+<p class="caption">
+Figure 3.3: The earth observation process components are sensors, data, analysis and decision-making.
+</p>
+</div>
+<div id="sensors" class="section level3" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Sensors</h3>
+<p>The sensor component of the EO process is the technology on the satellite that actually records information from earth. Sensors can be either <strong>active sensors</strong>, sensors which emit some energy which is reflected back from earth and built up into an image, or they can be <strong>passive sensors</strong> which record reflected and emitted imagery from the earth.</p>
+<p>Sensors can be designed in a wide variety of formats and specifications. What exactly sensors record is light, otherwise known as <strong>electromagnetic radiation</strong>, which can be characterized as waveform, denoted by its wavelength, or the distance between two successive wave peaks.</p>
+<div class="figure"><span id="fig:unnamed-chunk-20"></span>
+<img src="images/wave.jpg" alt="Different characteristics of waveform energy. Wavelength is the distance between successive wave peaks, while amplitude is change in signal value from the centre to its peak (or trough). For a given amplitude, high frequency/short wavelength energy has more energy that low frequency/long wavelength. Source: [CNX OpenStax](https://commons.wikimedia.org/wiki/File:OSC_Microbio_02_01_Freqwave.jpg)" width="80%" />
+<p class="caption">
+Figure 3.4: Different characteristics of waveform energy. Wavelength is the distance between successive wave peaks, while amplitude is change in signal value from the centre to its peak (or trough). For a given amplitude, high frequency/short wavelength energy has more energy that low frequency/long wavelength. Source: <a href="https://commons.wikimedia.org/wiki/File:OSC_Microbio_02_01_Freqwave.jpg">CNX OpenStax</a>
+</p>
+</div>
+<p>When we see different colours of a rainbow: red, orange, yellow, green, blue, indigo, violet what we are seeing as specific ranges of wavelengths of electromagnetic radiation. As such, the light recorded by sensors is categorized into three primary colours - red, green, and blue. That is, red light, green light, and blue light is recorded onto separately onto discrete bands of imagery. Importantly, these sensors can also record in other wavelength ranges of <strong>electromagnetic radiation</strong>, such as near-infrared (larger than visible wavelengths) or microwave (larger than near-infrared wavelengths).</p>
+<p>Sensing in these parts of the spectrum allow us to see into parts of the earth that are invisible to the human eye. Near-infrared imaging has roots in military applications for detecting camoflauged installations that have different spectral characteristics in the near-infrared part of the spectrum than the surrounding vegetation. Modern military equipment and companies have developed camouflauge that is not sensitive to these sorts of spectral differences, as seen on this promotional video.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wDGa9FBsUSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Note how they specifically describe how their camouflauge products are effective against specific parts of the elelctromagnetic spectrum. Many EO technologies have roots and are still actively developed in and for military applications. For example, In-Q-Tel - a venture capital arm of the Central Intelligence Agency (and in partnership with the US National Geospatial-Intelligence Agency), bought into a small DE company called Keyhole in early 2003 which had created technology for streaming image data onto a digital globe. The investment resuscitated the small firm, and integrated its technology into military and intelligence operations of the 2003/2004 Iraq War, which led to lucrative government contracts. In late 2004 Keyhole was acquired by Google, complete with CIA/military personnel and contracts, and the DE tool was soon rebranded as <a href="https://www.google.com/earth/">Google Earth</a>.</p>
+</div>
+<div id="data" class="section level3" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Data</h3>
+<p>Earth information recorded by sensors is processed into image data files where the information is quantized into digital numbers that label pixels (small equally sized rectangular partitions) that make up an image. The image data is a square made up of pixels; each pixel has a single digital number which represents the amount of reflected or emitted electromagnetic radiation over the area of the earth covered by the pixel. The total area covered by a single image is called a scene. For example, the longest-running EO program Landsat, has a scene size of 185 km by 185 km, where each individual pixel is 30 m by 30 m.</p>
+<p>The Sentinel-2 Program is a newer EO program launched by the European Space Agency (ESA) that has pixels arranged into image scenes that are processed into 10 km by 10 km areas. We can get a sense of the scale of information recorded by image pixels by visualizing image data at different zoom levels. Figure 3.5 below shows four views of the same Sentinel-2 image taken near Kakisa, Northwest Territories. The viewing scale in <strong>a</strong> is 1:100,000, which means one unit measured on the image is equal to 100,000 times that unit on the ground. As we adjust the viewing scale to 50,000 (b), 10,000 (c), and 2500 (d), two things happen.</p>
+<ul>
+<li>Firstly we can see the features of the landscape in greater detail.</li>
+<li>Secondly, the extent that is visible in the image decreases.</li>
+</ul>
+<p>This viewing scale is normally called <strong>cartographic scale</strong> in mapping, and the terminology can be confusing. In short remember the following rule:</p>
+<blockquote>
+<p><strong>bigger number = smaller scale <br>
+smaller number = larger scale</strong></p>
+</blockquote>
+<p>So a 1:1,000,000 map would be a small-scale map, whereas a 1:1000 map would be a large-scale map. As we move from <strong>a</strong> thru to <strong>d</strong> we are moving from a smaller scale to a larger scale. As we do we can see more detail about the actual pixels that make up the image data.</p>
+<p><strong>Stop and Do - 2</strong> <br><mark style="background-color: orange"> Have a closer look at the data in the figure below, can you figure out what the <strong>spatial resolution</strong> of this dataset is?</mark></p>
+<p>Recall that the spatial resolution is the size of the pixel, usually specified in meters or decimal degrees. One way to guess this is to look at a feature in the image (road width, river bank) and try to count the number of pixels it takes to cover that feature. Then divide the expected length of the feature by the number of pixels, and you have your (guesstimated) spatial resolution.</p>
+<button onclick="myFunction3()">
+Show Answer
+</button>
+<div id="myDIV" style="display:none">
+<p>It turns out that these Sentinel-2 pixels have a spatial resolution of 10 m. This means detecting objects that are smaller than 10 m, such as people or bicycles, is not possible. The spatial resolution of an image pre-determines what we can do in terms of analysis with that image. When selecting EO data for a given problem, it is crucial to select appropriate data in terms of spatial resolution.</p>
+</div>
+<p><br></p>
+<div class="figure"><span id="fig:unnamed-chunk-21"></span>
+<img src="images/resolution2.png" alt="Sentinel-2 satellite image over Kakisa, Northwest Territories, visualized at relative resolutions of a) 1:100,000, b) 1:50,000, c) 1:10,000, and d) 1:2,500 " width="80%" />
+<p class="caption">
+Figure 3.5: Sentinel-2 satellite image over Kakisa, Northwest Territories, visualized at relative resolutions of a) 1:100,000, b) 1:50,000, c) 1:10,000, and d) 1:2,500
+</p>
+</div>
+<p>Since these data are recorded as <strong>multi-spectral</strong> image data, the image channels/bands (i.e., discrete sections of the electromagnetic spectrum - in this case blue, green, red, and near-infrared light) can be combined in different ways. For example, a widely used band combination for monitoring vegetation is the <em>normalized differenced vegetation index</em> which is derived from the difference in the red and near infrared bands. It turns out that these bands behave very differently in health vegetation vs. unhealth vegetation, so we can use this to map vegetation health over large regions and to monitor vegetation over time. This has many applications in agriculture, forestry, and conservation. Again, selecting a sensor with the appropriate spectral bands for your problem is critical. 📖 <a href="https://www.usgs.gov/faqs/what-are-best-landsat-spectral-bands-use-my-research?qt-news_science_products=0#qt-news_science_products">Take a look and review the spectral bands in Landsat imagery</a>.</p>
+<p><strong>Stop and Do - 3</strong> <br><mark style="background-color: orange"> Here is an overview of the Sentinel-2 program from its launch in 2015. List two geospatial applications that the Sentinel-2 program can contribute to and explain how it can, or does, make this contribution?</mark></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pl7WkG_T3M4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<hr>
+</div>
+<div id="analysis" class="section level3" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> Analysis</h3>
+<p>Once data are sensed, transmitted and processed into image data, they need to be further analyzed into more useful information products. Because EO image data is so rich, the process of data analysis usually involves reducing the amount of information to more simple types of information we are used to dealing with using for decision-making. EO image data also lacks any abstractions we use in our conceptualiztion of the world around us. For example, the pixels in the Sentinel image above that are brightly coloured and are from surfaces in the village and road (buildings and gravel), do not know that they are part of those spatial objects (or semantic categories), rather they just record the reflected light characteristics of those surfaces. Thus in order to move toward the <em>queryable earth</em> as noted 📖 <a href="https://www.youtube.com/watch?v=jxfA4WaYPrc&amp;ab_channel=Planet">in the video keynote lecture</a>, we have to associate pixels with spatial objects or semantic categories in order to reason and make use of these rich data sources.</p>
+<p>One of the main ways to go from EO image data to richer DE data is to do what is called <strong>image classification</strong>. In simple terms, image classification is a process of training an <em>algorithm</em> (i.e., a set of instructions a computer program to carry out on the image) to associate pixels in image data with particular labels that those pixels are associated with on the ground. When we view the image in the Kakisa figure above, we naturally recognize which pixels are in the river, which are on land, which are on the road, etc. Let’s think a little more about how and why we make these associations.</p>
+<ul>
+<li><strong>Colour</strong>: seeing variation in colours in the image tells us about different surface features. Green looks like vegetation and brown looks like sediment-laden water.</li>
+<li><strong>Shape</strong>: the river coming in to Kakisa Lake on the right side of the image looks like a river primarily because of its shape, as a sinuos line-like set of pixels</li>
+<li><strong>Context</strong>: where pixels are located on the image provide a rich about of information about what features on the landscape they are part of. If we extracted only the brown pixels, we would get many of the pixels in the river and on the lake, but we would also get some of the pixels on land in the vegetated area. These are sedges or bogs which have the same approximate colour as the sediment-laden water, but because they are located within a complex of green pixels, and distance inland from the lakeshore, we immediately recognize them as part of the land and make an association to a landscape feature or landcover based on this.</li>
+</ul>
+<p>It turns out that when we view an image like this, the human brain is doing a lot of complex perception and association tasks that we take for granted. The <strong>context</strong> component is probably the most important, however most traditional image classifications focus only on colour (i.e., spectral characteristics of the pixels). Only recently have image classification algorithms started to incorporate shape and context into their approach to classifying pixels as part of more meaningful spatial objects or landcover categories. Once pixels are classified in this way, they are <em>queryable</em> and can be used to generate answers about environmental change, urbanization, conservation, and related environmental issues.</p>
+</div>
+<div id="decision-making" class="section level3" number="3.4.4">
+<h3><span class="header-section-number">3.4.4</span> Decision-Making</h3>
+<p>EO technologies - as we have already seen - can be used in a wide variety of geospatial applications. Ultimately however these data need to be used to generate new insights, drive decision-making, and improve our ability to manage and solve complex environmental problems. This aspect of EO is relatively under-developed. In environmental research, EO data is typically used as a data source to investigate questions about spatial distribution or change over time. Conclusions are drawn by analyzing the quantities of interest visually or statistically and/or correlating them with field measurements. However scientists are generally interested in discovering processes, confirming hypotheses, improving their understanding of how processes are operating, rather than specifically developing policies or solutions that address these problems.</p>
+<p>Academic and government scientists are major users of EO data, and have been key players in improving and developing the science and technology of EO for the past several decades. In Canada for example, federal agencies such as Environment Canada, Natural Resources Canada, and Agriculture and Agri-Food Canada all have extensive EO programs for monitoring aspects of the environment from space.</p>
+<hr>
+</div>
+</div>
+<div id="crop-monitoring-in-canada---earth-observation-in-action-i" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Crop Monitoring in Canada - Earth Observation in Action I</h2>
+<p>One of the most obvious geospatial applications of EO is agriculture. Agriculture is vitally important industry to virtually all countries and is highly dependent on a variety of natural processes such as weather and climate, soils, water resources, as well as socio-political dimensions of environmental regulation. Thus EO has potential applciation in agriculture at a variety of scales from providing information about how crops are growing within individual fields, all the way up to entire agricultural regions, such as The Prairies in western Canada.</p>
+<p>Agriculture and Agri-Food Canada (AAFC) is the federal agency overseeing agriculture and the food production industry in Canada. They use EO to produce an annual <strong>crop inventory</strong> dataset each year that identifies what crop is being grown in each pixel covered by the dataset. This data is produced by combining several EO datasets, and mapping their spectral characteristics to <strong>in-situ data</strong> where the crop types are known. This allows the development of an algorithm to predict crop type from space in an auomated manner, enabling national-scale monitoring of agriculture from space.</p>
+<p><strong>Stop and Do - 4</strong> <br><mark style="background-color: orange"> <a href="https://www.agr.gc.ca/atlas/aci/">Take a look at the AAFC Annual Crop Inventory Dataset here</a>. </mark></p>
+<p><mark style="background-color: orange">
+1. Use the address search tool to zoom into your home town and try to find the nearest farm to where you grew up. If you grew up in an urban area you may have to zoom out a bit; if you are not from Canada or from an area with no agriculture around, just use your current address. Make a note of what seems to be a common crop type for a specific farm.</mark></p>
+<p><mark style="background-color: orange">
+2. Next go to the <a href="https://www.google.ca/maps">same location in Street View using Google Maps</a>. Try to use the Street View feature in Google Maps to get a ground view of the farm, or zoom in to get the highest resolution overhead view of the farm. </mark></p>
+<p><mark style="background-color: orange">
+3. Navigate around and explore different views on the same location.
+</mark></p>
+<p>Answer the following questions (you may want to use the answers below as the basis for a post in the Course Discussion);</p>
+<ol style="list-style-type: decimal">
+<li>What was the dominant crop type as predicted by the crop inventory dataset?</li>
+<li>What was different about viewing the data using ACI vs. using Google Maps/Streetview? Which is the more useful way to view the farm? Why?</li>
+<li>Which view of the farm do you think would be more useful for government? What about the owner/operator of the farm? Why?</li>
+</ol>
+<div class="figure"><span id="fig:unnamed-chunk-22"></span>
+<img src="images/aci.png" alt="Clicking on a pixel in the web-map of the AAFC Annual Crop Inventory gives the history of predicted crop types for that location.  Source. Screenshot by Colin Robertson.  Used with permission" width="80%" />
+<p class="caption">
+Figure 3.6: Clicking on a pixel in the web-map of the AAFC Annual Crop Inventory gives the history of predicted crop types for that location. Source. Screenshot by Colin Robertson. Used with permission
+</p>
+</div>
+<blockquote>
+<strong>End of week 3, start of week 4.</strong>
+<hr>
+</blockquote>
+<!-- Week 4 -->
+</div>
+<div id="earth-observation-data-for-digital-earth" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Earth Observation Data for Digital Earth</h2>
+<p>So how does EO relate to DE? Well, EO comprises a large share of DE data. As EO programs continue to grow, the historical archive of image data provides a longer time series with which to compare current trends to.</p>
+<p>The question that often arises when tracking and monitoring environmental change is; <em>how unusual is this change we are observing today?</em></p>
+<p>Answering this question requires temporal data. For some types of data such as weather stations, this often goes back to the 1950s or 1960s. The longest continuously running EO program is the Landsat program, which dates back to the 1970s. Since we are now on the verge of launching Landsat 9. With each successive iteration of a Landsat sensor, technology has improved, and things change slightly. For example, in Landsat 1-Multi-Spectral-Scanner (MSS), channel 1 is the green band, and the spatial resolution of each pixel is 80 m, while in Landsat 8, channel 1 reflects blue/violet light, and the spatial resolution is 30 m. Thus in order to do longterm DE studies, often some data processing (e.g., to align green bands on imagery from different sensors) is needed to harmonize data so that things line up as expected.</p>
+<p>What we will cover in this week is how DE has changed and is changing traditional EO technologies and tools. As more data is collected, archived, and made accessible - more sophisticated applications and questions can be designed that make use of these data resources. This integration of disparate EO datasets is a key backbone of the DE vision as articulated in Week 1 and echoed in the keynote video at the start of of this module.</p>
+<div id="hyperspectral-data" class="section level3" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Hyperspectral Data</h3>
+<p>One relatively recent development has been the expansion from <strong>multi-spectral</strong> image data, which records usually 4-15 bands of spectral data, to <strong>hyperspectral</strong> image data, which might have hundreds of image bands over the same chunk of the electromagnetic spectrum. As you would expect, that means these bands are much narrower, and thus sensitive to very small regions of the spectrum. We can visualize the difference in how multispectral bands vs. hyperspectral bands cover the spectrum in the image below.</p>
+<div class="figure"><span id="fig:unnamed-chunk-23"></span>
+<img src="images/hyperion_bands_diagram.png" alt="Hyperspectral (Hyperion) and multispectral (ALI) image bands relative to the electromagnetic spectrum.  NASA illustration by Robert Simmon. Freely available for use." width="80%" />
+<p class="caption">
+Figure 3.7: Hyperspectral (Hyperion) and multispectral (ALI) image bands relative to the electromagnetic spectrum. NASA illustration by Robert Simmon. Freely available for use.
+</p>
+</div>
+<p>The obvious question that arises is why do we need so many bands of data? Hyperspectral imaging essentially covers the entire spectrum of visible, near IR, and short-wave IR electromagnetic radiation. In this way, a spectra can be built up showing the reflectance curve of the surface being imaged across these wavelengths. This is analogous to spectroscopy studies, which can detect chemical constituents of surfaces based on their spectral profiles.</p>
+<p>As such, hyperpspectral EO can be used to detect actual minerals and chemicals present in the surfaces being mapped. A question that emerges with hyperspectral data in particular, but also with the DE data more generally, is how to organize all of this data so that it is accessible and easy to use. In traditional EO analysis, image data are stored as files on disk, in common formats such a <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000279.shtml#:~:text=GeoTIFF%20is%20format%20extension%20for,portion%20of%20the%20TIFF%20spec.">geotiff</a> or <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000184.shtml">Mr.Sid</a>. However as the data volume gets bigger, managing and accessing data in files becomes challenging. You can imagine if you had a directory of 7 million word documents on your computer, finding the one that had your grade 11 English assignment might be challenging. Your approach to finding might be to sort by name if you knew the file name or used a naming convention, or sort by date to try to narrow down to files that are from the approximate time frame. This is the task of <strong>information retrieval</strong> and is a huge area of research in itself (Google is essentially the product of information retrieval research - where the information to be retrieved was relevant web pages to a given text query).</p>
+<blockquote>
+<p><strong>So what is the Google for the Digital Earth?</strong></p>
+</blockquote>
+<p>Unfortunately, it does not exist (yet). Different technologies have been proposed for how to organize EO data so that they are quickly accessible, but a leading platform has not emerged. We’ll quickly review one of the more popular approaches.</p>
+</div>
+<div id="data-cubes" class="section level3" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Data Cubes</h3>
+<p>A data cube is a logical extension of the regular rectangular array of pixels we store image data in. In a single image the data file is two dimensional, if we stack a bunch of image data files together, we get a three dimensional structure called a <strong>data cube</strong>. Just like any index, a data cube needs a way to organize its data (similar to how an index in a book is organized alphabetically). A three dimensional data cube might have latitude, longitude, and time as the three dimensions of the cube. As such, a given pixel defined by the intersection of a latitude and longitude will be aligned with values for that pixel at all other times in the cube. We usually denote these three dimensions X Y and Z.</p>
+<div class="figure"><span id="fig:unnamed-chunk-24"></span>
+<img src="images/cube.png" alt="Visual depiction of an earth observation data cube. [Kopp et al. 2019](https://www.mdpi.com/2306-5729/4/3/94). Licensed under Creative Commons 4.0." width="80%" />
+<p class="caption">
+Figure 3.8: Visual depiction of an earth observation data cube. <a href="https://www.mdpi.com/2306-5729/4/3/94">Kopp et al. 2019</a>. Licensed under Creative Commons 4.0.
+</p>
+</div>
+<p>The key property of a data cube is that all of the hard work goes into getting data into the representation but once it is there it is fast and easy to query and access its information. For example, a data cube of landsat data over all of Canada would have to first define what pixels are in and out, how to process raw landsat scenes into just the Canada pixels, how to deal with pixels on edges of scenes, how to deal with aligning image bands from different landsat sensors, how to handle differences in atmospheric, and many other issues. However once all of these problems are solved and the data are indexed in the cube, it is fairly easy to query and use information from massive amounts of data. One of the other very useful properties of the data cube is that new quantities can be computed and stored as layers in the cube. So for example, precomputing vegetation indices for each year and storing those would enable simple analysis of vegetation over time. Since these are only computed once and then stored, they are very fast to access by computer programs, as opposed to computing them <em>on-the-fly</em> in response to a user’s request/input.</p>
+<hr>
+</div>
+<div id="google-earth-engine-and-data-analytic-pipelines" class="section level3" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> Google Earth Engine and Data-Analytic Pipelines</h3>
+<p>Regardless of where and how EO data are stored, we also need analysis tools to generate answers and insights to the problems we’re working on. In the vast majority of studies and applications using EO data, the generic workflow model is as follows</p>
+<div class="figure"><span id="fig:unnamed-chunk-25"></span>
+<img src="images/workflow.png" alt="Analysis workflow for earth observation data" width="80%" />
+<p class="caption">
+Figure 3.9: Analysis workflow for earth observation data
+</p>
+</div>
+<p>While this workflow model has served the EO and geospatial community well for decades, as the DE becomes a reality and EO data archives become larger, this model of working with data is no longer feasible. It requires massive amounts of bandwidth for moving data from the web to your local machine, requires massive amounts of storage space, and massive amounts of computer memory when working with large data files. A more modern workflow is to keep data <strong>in the cloud</strong> – that is, on servers on the Internet, and do processing and analysis via a web browser. This workflow - which we might call a cloud-enabled EO workflow, allows massive amounts of data to be processed and analyzed from virtually any computer with a web browser.</p>
+<p>One platform that has made the cloud-enabled EO workflow a reality in recent years is <a href="Google%20Earth%20Engine">https://earthengine.google.com/</a> (GEE). GEE is a completely ‘cloud-based’ platform which includes access to massive amounts of DE data, in addition to computational tools that allow you to create data processing and analysis <em>pipelines</em>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKGOeTFHnKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Here is an example of the workflow based on GEE in a <a href="https://www.researchgate.net/publication/331859762_Automatic_mapping_of_planting_year_for_tree_crops_with_Landsat_satellite_time_series_stacks">recent paper mapping the year trees were planted in California orchards</a>. In this research project, different types of tree-planting scenarios are detected by the temporal pattern in their NDVI as recorded in Landsat EO data. Do you remember what NDVI measures? Why would this be a good indicator of tree growth?</p>
+<div class="figure"><span id="fig:unnamed-chunk-26"></span>
+<img src="images/gee.png" alt="Google Earth Engine workflow for EO analysis, sample analysis for a project mapping tree age in California orchards, source: [Chen et al. 2019](https://www.researchgate.net/publication/331859762_Automatic_mapping_of_planting_year_for_tree_crops_with_Landsat_satellite_time_series_stacks)" width="80%" />
+<p class="caption">
+Figure 3.10: Google Earth Engine workflow for EO analysis, sample analysis for a project mapping tree age in California orchards, source: <a href="https://www.researchgate.net/publication/331859762_Automatic_mapping_of_planting_year_for_tree_crops_with_Landsat_satellite_time_series_stacks">Chen et al. 2019</a>
+</p>
+</div>
+<p><strong>Stop and Think - 1</strong> <br><mark style="background-color: lightgreen"> What do you think the benefit of using GEE for this application was? Can you think of any disadvantages to taking this approach?</mark></p>
+<p>The cloud-enabled EO workflow and its incarnation in GEE is a huge step forward in realizing the DE vision.</p>
+</div>
+</div>
+<div id="high-resolution-imaging" class="section level2" number="3.7">
+<h2><span class="header-section-number">3.7</span> High Resolution Imaging</h2>
+<p>High-resolution EO can be defined roughly as sensors generating data products at 10 m resolution and under. This means that as resolutions get <em>higher</em> – for example the high resolution optical imager on the Pleiades satellite senses data at 2.8 m, GIS-MS on GeoEye satellite is 1.65 m, and Radarsat2 records in at 1 m – finer objects and land surface features can be detected and monitored. The number of high resolution EO sensors has increased dramatically over the past decade and is enabling new types of geospatial applications.</p>
+<p>📖 <a href="https://eos.com/blog/satellite-data-what-spatial-resolution-is-enough-for-you/">Read through this blog post which compares high and moderate resolution imagery</a>, pay attention to the folowing terms: coverage, tasking, cost, spectral bands, and history. Note the source of this article and consider when reading through.</p>
+<div id="object-based-image-analysis" class="section level3" number="3.7.1">
+<h3><span class="header-section-number">3.7.1</span> Object-based image analysis</h3>
+<p>One particular feature of high resolution EO data that is unique, is its ability to be used to detect <strong>spatial objects</strong>. A spatial object is any describable object in an image that can be accurately detected and extracted. As noted in our discussion of image classification, being able to add meaning to groups of pixels – as landcover categories, or in the case of high resolution imagery, as individual buildings, ponds, and roads. Once these groups of pixels can be treated as discrete objects, much richer analysis of their distribution, properties, and change-over-time can be realized. High resolution EO data - due to its fine level of spatial detail, requires new ways of doing analysis. For moderate and lower resolution data pixel-based analysis approaches are widley used. However for high resolution analysis, utilizing information about <strong>geographic context</strong> is even more important.</p>
+<p>Object-based image analysis is a suite of methods that share two broad steps. First is what is called segmentation, and this means grouping pixels together into homogeneous chunks. Just as if you are looking at the roof of a building, it will primarily be one colour, we would automatically group all of the roof pixels together based on their spectral characteristics (e.g., colour).</p>
+<p>The second step is to classify these segments to give them meaning, so labelling roofs as roofs and so on. At this point different ways of combining labelled segments together can be created, in order to create so called hierarchies of objects, such that a road segment within a park is classified differently than a road segment outside of a park. These sorts of rules can be built up to create very informative and detailed maps derived from high resolution imagery. As you might expect, this sort of analysis is more common in urban landscapes where there is a wide variety of <em>object-like</em> features in close proximity.</p>
+<hr>
+</div>
+</div>
+<div id="monitoring-forest-carbon-from-space---earth-observation-in-action-ii" class="section level2" number="3.8">
+<h2><span class="header-section-number">3.8</span> Monitoring Forest Carbon from Space - Earth Observation in Action II</h2>
+<p>Forests are critically important for climate change, acting as both carbon sources or carbon sinks. Forests act as sources of carbon when they are burned down or decay after dying. However, when trees photosynthesize they convert carbon from the atmosphere to organic mass making up the tree, and in this way forest growth acts as a carbon sink. Thus, monitoring forests is a critical part of national-scale carbon accounting projects, which countries must do to measure progress towards carbon reduction targets. In Canada, there is an estimated 347 million hectares of forested land, making this the critical information need. Given the huge landbase covered by forests, understanding their role in the carbon cycle is a perfect application for EO approaches.</p>
+<p>One way EO data is utilized to help monitor Canada’s carbon budget is through the National Deforestation Monitoring System. This is a system of mapping and reporting technologies designed to work together to measure how much forest is lost in Canada in a given year.</p>
+<p>Note that deforestation is not the same as harvesting trees or trees lost to wildfire, rather deforestation is the direct human-induced conversion of forested land to non-forested land. Landsat imagery is the core EO data used for mapping forested areas and detecting deforestation events, in addition to a suite of related geospatial data products including aerial photography, park boundaries, oil &amp; gas industry data, and high resolution imagery. The figure below shows how Landsat data are combined from different time periods to detect forest loss.</p>
+<div class="figure"><span id="fig:unnamed-chunk-27"></span>
+<img src="images/deforest.png" alt="Examples of various Landsat satellite band combinations and change enhancements that may be used in the mapping process. Note the change enhancement at right shows red triggers where vegetation loss or change has occurred. Band combinations shown are normal colour rendition on left, with colour infrared in the middle. The right-hand column shows Landsat Thematic Mapper (TM) and Enhanced Thematic Mapper (ETM) bands 4,5,3 (i.e., the two near infrared bands and a red band) displayed as red, green, blue, source: [Dyk et al. 2015](https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/36042.pdf)" width="80%" />
+<p class="caption">
+Figure 3.11: Examples of various Landsat satellite band combinations and change enhancements that may be used in the mapping process. Note the change enhancement at right shows red triggers where vegetation loss or change has occurred. Band combinations shown are normal colour rendition on left, with colour infrared in the middle. The right-hand column shows Landsat Thematic Mapper (TM) and Enhanced Thematic Mapper (ETM) bands 4,5,3 (i.e., the two near infrared bands and a red band) displayed as red, green, blue, source: <a href="https://cfs.nrcan.gc.ca/pubwarehouse/pdfs/36042.pdf">Dyk et al. 2015</a>
+</p>
+</div>
+<hr>
+</div>
+<div id="m3-summ" class="section level2" number="3.9">
+<h2><span class="header-section-number">3.9</span> Summary</h2>
+<p>We have spent these two weeks examining how EO technologies have transformed our abilities to map and monitor natural and human processes at unprecedented scales. We have rich and growing archives of EO data from some satellites, and new and higher resolution EO data coming from newer commercial satellites. We also have new ways of analyzing these data to extract key insights, and a move towards a cloud-based workflow for people working with EO data. There is clearly a synergy between the <em>queryable earth</em> and the <em>digital earth</em> that is now becoming a reality and fueling more and more geospatial applications. Being able to understand, critically evaluate, and use these applications are important skills and knowledge for applying the DE to the problems you are most interested in.</p>
+<div id="m3-kt" class="section level3" number="3.9.1">
+<h3><span class="header-section-number">3.9.1</span> Key Terms</h3>
+<ul>
+<li>image data</li>
+<li>geostationary orbit</li>
+<li>sun-synchronous orbit</li>
+<li>multi-spectral</li>
+<li>hyper-spectral</li>
+<li>image classification</li>
+<li>cloud-enabled EO workflow</li>
+<li>spatial object</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="action.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-view-from-the-ground-citizen-science-and-community-mapping.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-satellite.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

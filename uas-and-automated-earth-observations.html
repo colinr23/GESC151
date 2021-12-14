@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 6 UAS and Automated Earth Observations | GESC 151: Our Digital Earth</title>
+  <meta name="description" content="Aadaptation of demo project for GESC 151 course development." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 6 UAS and Automated Earth Observations | GESC 151: Our Digital Earth" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Aadaptation of demo project for GESC 151 course development." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 6 UAS and Automated Earth Observations | GESC 151: Our Digital Earth" />
+  
+  <meta name="twitter:description" content="Aadaptation of demo project for GESC 151 course development." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2020-10-16" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="gps-and-wayfinding.html"/>
+<link rel="next" href="gis-and-big-data.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/threejs-111/three.min.js"></script>
+<script src="libs/threejs-111/Detector.js"></script>
+<script src="libs/threejs-111/Projector.js"></script>
+<script src="libs/threejs-111/CanvasRenderer.js"></script>
+<script src="libs/globe-binding-0.3.3/globe.js"></script>
+<link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+<script src="libs/tabwid-1.0.0/tabwid.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 151: Our Digital Earth</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-goal-and-learning-outcomes"><i class="fa fa-check"></i>Course Goal and Learning Outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies-used-in-this-course"><i class="fa fa-check"></i>Case studies used in this course</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-readings"><i class="fa fa-check"></i>Course readings</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#preliminaries"><i class="fa fa-check"></i>Preliminaries</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#readings"><i class="fa fa-check"></i>Readings</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#digital-earth-today"><i class="fa fa-check"></i><b>1.1</b> Digital Earth Today</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#whatis"><i class="fa fa-check"></i><b>1.2</b> What is the Digital Earth</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#physical"><i class="fa fa-check"></i><b>1.3</b> From the Physical to the Digital Earth</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#themes"><i class="fa fa-check"></i><b>1.4</b> Themes, Layers, and Abstractions of Reality</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#career"><i class="fa fa-check"></i><b>1.5</b> The Digital Earth Career Path</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>1.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="intro.html"><a href="intro.html#key-terms-from-this-week"><i class="fa fa-check"></i><b>1.6.1</b> Key terms from this week</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="action.html"><a href="action.html"><i class="fa fa-check"></i><b>2</b> The Digital Earth in Action</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#preliminaries"><i class="fa fa-check"></i>Preliminaries</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#readings"><i class="fa fa-check"></i>Readings</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="2.1" data-path="action.html"><a href="action.html#the-digital-earth-is-already-here"><i class="fa fa-check"></i><b>2.1</b> The Digital Earth is Already Here</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="action.html"><a href="action.html#covid-19-mapping-the-pandemic"><i class="fa fa-check"></i><b>2.1.1</b> COVID-19: Mapping the Pandemic</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="action.html"><a href="action.html#critically-thinking-about-geospatial-data"><i class="fa fa-check"></i><b>2.2</b> Critically Thinking about Geospatial Data</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="action.html"><a href="action.html#big-data-example-mapping-global-shipping-patterns"><i class="fa fa-check"></i><b>2.2.1</b> Big Data Example: Mapping Global Shipping Patterns</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="action.html"><a href="action.html#weather-prediction-in-the-digital-earth-era"><i class="fa fa-check"></i><b>2.3</b> Weather Prediction in the Digital Earth Era</a></li>
+<li class="chapter" data-level="2.4" data-path="action.html"><a href="action.html#the-digital-earth-basemaps---resources-to-explore"><i class="fa fa-check"></i><b>2.4</b> The Digital Earth Basemaps - Resources to Explore</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="action.html"><a href="action.html#terrestrial-water-storage"><i class="fa fa-check"></i><b>2.4.1</b> Terrestrial Water Storage</a></li>
+<li class="chapter" data-level="2.4.2" data-path="action.html"><a href="action.html#snow"><i class="fa fa-check"></i><b>2.4.2</b> Snow</a></li>
+<li class="chapter" data-level="2.4.3" data-path="action.html"><a href="action.html#human-settlements"><i class="fa fa-check"></i><b>2.4.3</b> Human Settlements</a></li>
+<li class="chapter" data-level="2.4.4" data-path="action.html"><a href="action.html#diseaes-outbreaks"><i class="fa fa-check"></i><b>2.4.4</b> Diseaes Outbreaks</a></li>
+<li class="chapter" data-level="2.4.5" data-path="action.html"><a href="action.html#economic-inequality"><i class="fa fa-check"></i><b>2.4.5</b> Economic Inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>2.5</b> Summary</a>
+<ul>
+<li class="chapter" data-level="2.5.1" data-path="intro.html"><a href="intro.html#key-terms-from-this-week"><i class="fa fa-check"></i><b>2.5.1</b> Key terms from this week</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html"><i class="fa fa-check"></i><b>3</b> The View from Above: Satellite Imagery for Earth Observation</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#preliminaries"><i class="fa fa-check"></i>Preliminaries</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#readings"><i class="fa fa-check"></i>Readings</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#what-is-earth-observation"><i class="fa fa-check"></i><b>3.1</b> What is Earth Observation?</a></li>
+<li class="chapter" data-level="3.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process"><i class="fa fa-check"></i><b>3.2</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#satellites"><i class="fa fa-check"></i><b>3.2.1</b> Satellites</a></li>
+<li class="chapter" data-level="3.2.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>3.2.2</b> Sensors</a></li>
+<li class="chapter" data-level="3.2.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data"><i class="fa fa-check"></i><b>3.2.3</b> Data</a></li>
+<li class="chapter" data-level="3.2.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#analysis"><i class="fa fa-check"></i><b>3.2.4</b> Analysis</a></li>
+<li class="chapter" data-level="3.2.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#decision-making"><i class="fa fa-check"></i><b>3.2.5</b> Decision-Making</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#crop-monitoring-in-canada---earth-observation-in-action-i"><i class="fa fa-check"></i><b>3.3</b> Crop Monitoring in Canada - Earth Observation in Action I</a></li>
+<li class="chapter" data-level="3.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#earth-observation-data-for-digital-earth"><i class="fa fa-check"></i><b>3.4</b> Earth Observation Data for Digital Earth</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#hyperspectral-data"><i class="fa fa-check"></i><b>3.4.1</b> Hyperspectral Data</a></li>
+<li class="chapter" data-level="3.4.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data-cubes"><i class="fa fa-check"></i><b>3.4.2</b> Data Cubes</a></li>
+<li class="chapter" data-level="3.4.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#google-earth-engine-and-data-analytic-pipelines"><i class="fa fa-check"></i><b>3.4.3</b> Google Earth Engine and Data-Analytic Pipelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#high-resolution-imaging"><i class="fa fa-check"></i><b>3.5</b> High Resolution Imaging</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#object-based-image-analysis"><i class="fa fa-check"></i><b>3.5.1</b> Object-based image analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#monitoring-forest-carbon-from-space---earth-observation-in-action-ii"><i class="fa fa-check"></i><b>3.6</b> Monitoring Forest Carbon From Space - Earth Observation in Action II</a></li>
+<li class="chapter" data-level="3.7" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>3.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="intro.html"><a href="intro.html#key-terms-from-this-week"><i class="fa fa-check"></i><b>3.7.1</b> Key terms from this week</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html"><i class="fa fa-check"></i><b>4</b> The View from the Ground: Citizen Science and Community Mapping</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#preliminaries"><i class="fa fa-check"></i>Preliminaries</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#readings"><i class="fa fa-check"></i>Readings</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#this-digital-earth-includes-people"><i class="fa fa-check"></i><b>4.1</b> This Digital Earth includes People</a></li>
+<li class="chapter" data-level="4.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#citizen-science-vgi-and-cbm-empowering-people-through-mapping"><i class="fa fa-check"></i><b>4.2</b> Citizen Science, VGI, and CBM: Empowering people through mapping</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#openstreetmaps-osm"><i class="fa fa-check"></i><b>4.2.1</b> OpenStreetMaps (OSM)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#community-mapping"><i class="fa fa-check"></i><b>4.3</b> Community Mapping</a></li>
+<li class="chapter" data-level="4.4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#augmented-reality"><i class="fa fa-check"></i><b>4.4</b> Augmented Reality</a></li>
+<li class="chapter" data-level="4.5" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>4.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html"><i class="fa fa-check"></i><b>5</b> GPS and Wayfinding</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#preliminaries"><i class="fa fa-check"></i>Preliminaries</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#readings"><i class="fa fa-check"></i>Readings</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+</ul></li>
+<li class="chapter" data-level="5.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#what-is-gps"><i class="fa fa-check"></i><b>5.1</b> What is GPS?</a></li>
+<li class="chapter" data-level="5.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#wayfinding"><i class="fa fa-check"></i><b>5.2</b> Wayfinding</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="uas-and-automated-earth-observations.html"><a href="uas-and-automated-earth-observations.html"><i class="fa fa-check"></i><b>6</b> UAS and Automated Earth Observations</a></li>
+<li class="chapter" data-level="7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html"><i class="fa fa-check"></i><b>7</b> GIS and Big Data</a></li>
+<li class="chapter" data-level="8" data-path="d-visualization-and-story-maps.html"><a href="d-visualization-and-story-maps.html"><i class="fa fa-check"></i><b>8</b> 3D Visualization and Story Maps</a></li>
+<li class="chapter" data-level="9" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html"><i class="fa fa-check"></i><b>9</b> Term Project and Digital Earth Project Management</a></li>
+<li class="chapter" data-level="10" data-path="the-digital-earth-town-hall.html"><a href="the-digital-earth-town-hall.html"><i class="fa fa-check"></i><b>10</b> The Digital Earth Town Hall</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC 151: Our Digital Earth</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="uas-and-automated-earth-observations" class="section level1" number="6">
+<h1><span class="header-section-number">Chapter 6</span> UAS and Automated Earth Observations</h1>
+<p>We have finished a nice book.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="gps-and-wayfinding.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gis-and-big-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-UAS.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

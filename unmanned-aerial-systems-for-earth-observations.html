@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 6 Unmanned Aerial Systems for Earth Observations | index.split</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 6 Unmanned Aerial Systems for Earth Observations | index.split" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 6 Unmanned Aerial Systems for Earth Observations | index.split" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="gps-and-wayfinding.html"/>
+<link rel="next" href="gis-and-big-data.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/threejs-111/three.min.js"></script>
+<script src="libs/threejs-111/Detector.js"></script>
+<script src="libs/threejs-111/Projector.js"></script>
+<script src="libs/threejs-111/CanvasRenderer.js"></script>
+<script src="libs/globe-binding-0.3.3/globe.js"></script>
+<link href="libs/tabwid-1.0.0/tabwid.css" rel="stylesheet" />
+<script src="libs/tabwid-1.0.0/tabwid.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 151: Our Digital Earth</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-goal-and-learning-outcomes"><i class="fa fa-check"></i>Course Goal and Learning Outcomes</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#case-studies-used-in-this-course"><i class="fa fa-check"></i>Case studies used in this course</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-readings"><i class="fa fa-check"></i>Course readings</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-this-course-is-structured"><i class="fa fa-check"></i>How this course is structured</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction to the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#pre-1"><i class="fa fa-check"></i><b>1.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="intro.html"><a href="intro.html#re-1"><i class="fa fa-check"></i><b>1.1.1</b> Readings</a></li>
+<li class="chapter" data-level="1.1.2" data-path="intro.html"><a href="intro.html#lo-1"><i class="fa fa-check"></i><b>1.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html#activities-for-module-1"><i class="fa fa-check"></i>Activities for Module 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#digital-earth-today"><i class="fa fa-check"></i><b>1.2</b> Digital Earth Today</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#whatis"><i class="fa fa-check"></i><b>1.3</b> What is the Digital Earth</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#physical"><i class="fa fa-check"></i><b>1.4</b> From the Physical to the Digital Earth</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#themes"><i class="fa fa-check"></i><b>1.5</b> Themes, Layers, and Abstractions of Reality</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="intro.html"><a href="intro.html#abstractions-of-space"><i class="fa fa-check"></i><b>1.5.1</b> Abstractions of Space</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#career"><i class="fa fa-check"></i><b>1.6</b> The Digital Earth Career Path</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#m1-summ"><i class="fa fa-check"></i><b>1.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="intro.html"><a href="intro.html#m1-kt"><i class="fa fa-check"></i><b>1.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="action.html"><a href="action.html"><i class="fa fa-check"></i><b>2</b> The Digital Earth in Action</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="action.html"><a href="action.html#pre-2"><i class="fa fa-check"></i><b>2.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="action.html"><a href="action.html#re-2"><i class="fa fa-check"></i><b>2.1.1</b> Readings</a></li>
+<li class="chapter" data-level="2.1.2" data-path="action.html"><a href="action.html#lo-2"><i class="fa fa-check"></i><b>2.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="action.html"><a href="action.html#activities-for-module-2"><i class="fa fa-check"></i>Activities for Module 2</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="action.html"><a href="action.html#the-digital-earth-is-already-here"><i class="fa fa-check"></i><b>2.2</b> The Digital Earth is Already Here</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="action.html"><a href="action.html#covid-19-mapping-the-pandemic"><i class="fa fa-check"></i><b>2.2.1</b> COVID-19: Mapping the Pandemic</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="action.html"><a href="action.html#critically-thinking-about-geospatial-data"><i class="fa fa-check"></i><b>2.3</b> Critically Thinking about Geospatial Data</a></li>
+<li class="chapter" data-level="2.4" data-path="action.html"><a href="action.html#big-data-example-mapping-global-shipping-patterns"><i class="fa fa-check"></i><b>2.4</b> Big Data Example: Mapping Global Shipping Patterns</a></li>
+<li class="chapter" data-level="2.5" data-path="action.html"><a href="action.html#weather-prediction-in-the-digital-earth-era"><i class="fa fa-check"></i><b>2.5</b> Weather Prediction in the Digital Earth Era</a></li>
+<li class="chapter" data-level="2.6" data-path="action.html"><a href="action.html#the-digital-earth-basemaps---resources-to-explore"><i class="fa fa-check"></i><b>2.6</b> The Digital Earth Basemaps - Resources to Explore</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="action.html"><a href="action.html#terrestrial-water-storage"><i class="fa fa-check"></i><b>2.6.1</b> Terrestrial Water Storage</a></li>
+<li class="chapter" data-level="2.6.2" data-path="action.html"><a href="action.html#snow"><i class="fa fa-check"></i><b>2.6.2</b> Snow</a></li>
+<li class="chapter" data-level="2.6.3" data-path="action.html"><a href="action.html#human-settlements"><i class="fa fa-check"></i><b>2.6.3</b> Human Settlements</a></li>
+<li class="chapter" data-level="2.6.4" data-path="action.html"><a href="action.html#disease-outbreaks"><i class="fa fa-check"></i><b>2.6.4</b> Disease Outbreaks</a></li>
+<li class="chapter" data-level="2.6.5" data-path="action.html"><a href="action.html#economic-inequality"><i class="fa fa-check"></i><b>2.6.5</b> Economic Inequality</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="action.html"><a href="action.html#m2-summ"><i class="fa fa-check"></i><b>2.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="action.html"><a href="action.html#m2-kt"><i class="fa fa-check"></i><b>2.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html"><i class="fa fa-check"></i><b>3</b> The View from Above: Satellite Imagery for Earth Observation</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#pre-3"><i class="fa fa-check"></i><b>3.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#re-3"><i class="fa fa-check"></i><b>3.1.1</b> Readings</a></li>
+<li class="chapter" data-level="3.1.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#lo-3"><i class="fa fa-check"></i><b>3.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#activities-for-module-3"><i class="fa fa-check"></i>Activities for Module 3</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#what-is-earth-observation"><i class="fa fa-check"></i><b>3.2</b> What is Earth Observation?</a></li>
+<li class="chapter" data-level="3.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process"><i class="fa fa-check"></i><b>3.3</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#satellites"><i class="fa fa-check"></i><b>3.3.1</b> Satellites</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#the-earth-observation-process-1"><i class="fa fa-check"></i><b>3.4</b> The Earth Observation Process</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>3.4.1</b> Sensors</a></li>
+<li class="chapter" data-level="3.4.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data"><i class="fa fa-check"></i><b>3.4.2</b> Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#analysis"><i class="fa fa-check"></i><b>3.4.3</b> Analysis</a></li>
+<li class="chapter" data-level="3.4.4" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#decision-making"><i class="fa fa-check"></i><b>3.4.4</b> Decision-Making</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#crop-monitoring-in-canada---earth-observation-in-action-i"><i class="fa fa-check"></i><b>3.5</b> Crop Monitoring in Canada - Earth Observation in Action I</a></li>
+<li class="chapter" data-level="3.6" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#earth-observation-data-for-digital-earth"><i class="fa fa-check"></i><b>3.6</b> Earth Observation Data for Digital Earth</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#hyperspectral-data"><i class="fa fa-check"></i><b>3.6.1</b> Hyperspectral Data</a></li>
+<li class="chapter" data-level="3.6.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#data-cubes"><i class="fa fa-check"></i><b>3.6.2</b> Data Cubes</a></li>
+<li class="chapter" data-level="3.6.3" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#google-earth-engine-and-data-analytic-pipelines"><i class="fa fa-check"></i><b>3.6.3</b> Google Earth Engine and Data-Analytic Pipelines</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#high-resolution-imaging"><i class="fa fa-check"></i><b>3.7</b> High Resolution Imaging</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#object-based-image-analysis"><i class="fa fa-check"></i><b>3.7.1</b> Object-based image analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#monitoring-forest-carbon-from-space---earth-observation-in-action-ii"><i class="fa fa-check"></i><b>3.8</b> Monitoring Forest Carbon from Space - Earth Observation in Action II</a></li>
+<li class="chapter" data-level="3.9" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-summ"><i class="fa fa-check"></i><b>3.9</b> Summary</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#m3-kt"><i class="fa fa-check"></i><b>3.9.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html"><i class="fa fa-check"></i><b>4</b> The View from the Ground: Citizen Science and Community Mapping</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#pre-4"><i class="fa fa-check"></i><b>4.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#re-4"><i class="fa fa-check"></i><b>4.1.1</b> Readings</a></li>
+<li class="chapter" data-level="4.1.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#lo-4"><i class="fa fa-check"></i><b>4.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#activities-for-module-4"><i class="fa fa-check"></i>Activities for Module 4</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#this-digital-earth-includes-people"><i class="fa fa-check"></i><b>4.2</b> This Digital Earth includes People</a></li>
+<li class="chapter" data-level="4.3" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#citizen-science-empowering-people-through-mapping"><i class="fa fa-check"></i><b>4.3</b> Citizen Science: Empowering people through mapping</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#openstreetmaps-osm"><i class="fa fa-check"></i><b>4.3.1</b> OpenStreetMaps (OSM)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#crowdsourcing-case-study-rinkwatch"><i class="fa fa-check"></i><b>4.3.2</b> Crowdsourcing Case Study: RinkWatch</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#community-mapping"><i class="fa fa-check"></i><b>4.4</b> Community Mapping</a></li>
+<li class="chapter" data-level="4.5" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#augmented-reality"><i class="fa fa-check"></i><b>4.5</b> Augmented Reality</a></li>
+<li class="chapter" data-level="4.6" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#covid-contact-tracing-as-participatory-location-based-services"><i class="fa fa-check"></i><b>4.6</b> COVID Contact Tracing as Participatory Location-based Services</a></li>
+<li class="chapter" data-level="4.7" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-summ"><i class="fa fa-check"></i><b>4.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="the-view-from-the-ground-citizen-science-and-community-mapping.html"><a href="the-view-from-the-ground-citizen-science-and-community-mapping.html#m4-kt"><i class="fa fa-check"></i><b>4.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html"><i class="fa fa-check"></i><b>5</b> GPS and Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#pre-5"><i class="fa fa-check"></i><b>5.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#re-5"><i class="fa fa-check"></i><b>5.1.1</b> Readings</a></li>
+<li class="chapter" data-level="5.1.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#lo-5"><i class="fa fa-check"></i><b>5.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#activities-for-module-5"><i class="fa fa-check"></i>Activities for Module 5</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#what-is-gps"><i class="fa fa-check"></i><b>5.2</b> What is GPS?</a></li>
+<li class="chapter" data-level="5.3" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#how-gps-works"><i class="fa fa-check"></i><b>5.3</b> How GPS Works</a></li>
+<li class="chapter" data-level="5.4" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#wayfinding"><i class="fa fa-check"></i><b>5.4</b> Wayfinding</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#characteristics-of-wayfinding"><i class="fa fa-check"></i><b>5.4.1</b> Characteristics of Wayfinding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#ethical-issues-of-gps-tracking"><i class="fa fa-check"></i><b>5.5</b> Ethical Issues of GPS Tracking</a></li>
+<li class="chapter" data-level="5.6" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-summ"><i class="fa fa-check"></i><b>5.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="gps-and-wayfinding.html"><a href="gps-and-wayfinding.html#m5-kt"><i class="fa fa-check"></i><b>5.6.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html"><i class="fa fa-check"></i><b>6</b> Unmanned Aerial Systems for Earth Observations</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#pre-6"><i class="fa fa-check"></i><b>6.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#re-6"><i class="fa fa-check"></i><b>6.1.1</b> Readings</a></li>
+<li class="chapter" data-level="6.1.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#lo-6"><i class="fa fa-check"></i><b>6.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#activities-for-module-6"><i class="fa fa-check"></i>Activities for Module 6</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uas-for-mapping"><i class="fa fa-check"></i><b>6.2</b> UAS for Mapping</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#platforms"><i class="fa fa-check"></i><b>6.2.1</b> Platforms</a></li>
+<li class="chapter" data-level="6.2.2" data-path="the-view-from-above-satellite-imagery-for-earth-observation.html"><a href="the-view-from-above-satellite-imagery-for-earth-observation.html#sensors"><i class="fa fa-check"></i><b>6.2.2</b> Sensors</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#d-mapping-from-uas"><i class="fa fa-check"></i><b>6.3</b> 3D Mapping from UAS</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#structure-from-motion-photogrammetry"><i class="fa fa-check"></i><b>6.3.1</b> Structure from Motion Photogrammetry</a></li>
+<li class="chapter" data-level="6.3.2" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#case-study-drones-for-mapping-snow-in-northern-canada"><i class="fa fa-check"></i><b>6.3.2</b> Case Study: Drones for mapping snow in northern Canada</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-mapping-project-planning"><i class="fa fa-check"></i><b>6.4</b> UAV Mapping Project Planning</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#uav-flight-planning"><i class="fa fa-check"></i><b>6.4.1</b> UAV Flight Planning</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#regulations-for-using-uav-for-mapping-in-canada"><i class="fa fa-check"></i><b>6.5</b> Regulations for using UAV for mapping in Canada</a></li>
+<li class="chapter" data-level="6.6" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-summ"><i class="fa fa-check"></i><b>6.6</b> Summary</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="unmanned-aerial-systems-for-earth-observations.html"><a href="unmanned-aerial-systems-for-earth-observations.html#m6-kt"><i class="fa fa-check"></i><b>6.6.1</b> Keywords</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html"><i class="fa fa-check"></i><b>7</b> GIS and Big Data</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#pre-7"><i class="fa fa-check"></i><b>7.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#re-7"><i class="fa fa-check"></i><b>7.1.1</b> Readings</a></li>
+<li class="chapter" data-level="7.1.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#lo-7"><i class="fa fa-check"></i><b>7.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#activities-for-module-7"><i class="fa fa-check"></i>Activities for Module 7</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#overview-of-lesson"><i class="fa fa-check"></i><b>7.2</b> Overview of Lesson</a></li>
+<li class="chapter" data-level="7.3" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#live-worked-example-of-geospatial-data-analysis"><i class="fa fa-check"></i><b>7.3</b> Live Worked Example of Geospatial Data Analysis</a></li>
+<li class="chapter" data-level="7.4" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#geospatial-data-and-crime"><i class="fa fa-check"></i><b>7.4</b> Geospatial Data and Crime</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#what-is-crime-data"><i class="fa fa-check"></i><b>7.4.1</b> What is Crime Data</a></li>
+</ul></li>
+<li class="chapter" data-level="7.5" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-data-as-a-case-of-big-data"><i class="fa fa-check"></i><b>7.5</b> Crime Data as a case of Big Data</a></li>
+<li class="chapter" data-level="7.6" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#crime-statistics-in-city-of-toronto"><i class="fa fa-check"></i><b>7.6</b> Crime Statistics in City of Toronto</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#exercise"><i class="fa fa-check"></i><b>7.6.1</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="7.7" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-summ"><i class="fa fa-check"></i><b>7.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="gis-and-big-data.html"><a href="gis-and-big-data.html#m7-kt"><i class="fa fa-check"></i><b>7.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html"><i class="fa fa-check"></i><b>8</b> GeoVisualization and Story Maps</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#pre-8"><i class="fa fa-check"></i><b>8.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#re-8"><i class="fa fa-check"></i><b>8.1.1</b> Readings</a></li>
+<li class="chapter" data-level="8.1.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#lo-8"><i class="fa fa-check"></i><b>8.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#activities-for-module-8"><i class="fa fa-check"></i>Activities for Module 8</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#what-is-geovisualization"><i class="fa fa-check"></i><b>8.2</b> What is Geovisualization?</a></li>
+<li class="chapter" data-level="8.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#viewing-the-digital-earth"><i class="fa fa-check"></i><b>8.3</b> Viewing the Digital Earth</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#one-dimensional-views"><i class="fa fa-check"></i><b>8.3.1</b> One-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#two-dimensional-views"><i class="fa fa-check"></i><b>8.3.2</b> Two-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#three-dimensional-views"><i class="fa fa-check"></i><b>8.3.3</b> Three-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#four-dimensional-views"><i class="fa fa-check"></i><b>8.3.4</b> Four-Dimensional Views</a></li>
+<li class="chapter" data-level="8.3.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#dashboards-views-into-the-digital-earth"><i class="fa fa-check"></i><b>8.3.5</b> Dashboards Views into the Digital Earth</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#earth-system-geovisualization"><i class="fa fa-check"></i><b>8.4</b> Earth System GeoVisualization</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#noaa-view-data-exploration-tool"><i class="fa fa-check"></i><b>8.4.1</b> <span>NOAA View Data Exploration Tool</span></a></li>
+<li class="chapter" data-level="8.4.2" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#global-climate-dashboard"><i class="fa fa-check"></i><b>8.4.2</b> <span>Global Climate Dashboard</span></a></li>
+<li class="chapter" data-level="8.4.3" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#arctic-biodiversity-data-service"><i class="fa fa-check"></i><b>8.4.3</b> <span>Arctic Biodiversity Data Service</span></a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#story-maps-digital-earth-storytelling"><i class="fa fa-check"></i><b>8.5</b> Story Maps: Digital Earth Storytelling</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#case-study-city-of-kitchener-lifestyle-segments"><i class="fa fa-check"></i><b>8.5.1</b> Case Study: City of Kitchener Lifestyle Segments</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#the-power-and-limits-of-geovisualization"><i class="fa fa-check"></i><b>8.6</b> The Power and Limits of GeoVisualization</a></li>
+<li class="chapter" data-level="8.7" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-summ"><i class="fa fa-check"></i><b>8.7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="geovisualization-and-story-maps.html"><a href="geovisualization-and-story-maps.html#m8-kt"><i class="fa fa-check"></i><b>8.7.1</b> Key Terms</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html"><i class="fa fa-check"></i><b>9</b> Term Project and Digital Earth Project Management</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#pre-9"><i class="fa fa-check"></i><b>9.1</b> Preliminaries</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#re-9"><i class="fa fa-check"></i><b>9.1.1</b> Readings</a></li>
+<li class="chapter" data-level="9.1.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#lo-9"><i class="fa fa-check"></i><b>9.1.2</b> Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#activities-for-module-9"><i class="fa fa-check"></i>Activities for Module 9</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#what-is-the-term-project"><i class="fa fa-check"></i><b>9.2</b> What is the Term Project?</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#the-project"><i class="fa fa-check"></i><b>9.2.1</b> The project</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#resources-for-developing-your-project-idea"><i class="fa fa-check"></i><b>9.3</b> Resources for Developing your Project Idea</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-a-google-earth-story---30-minute-activity"><i class="fa fa-check"></i><b>9.3.1</b> Creating a Google Earth Story - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.2" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#creating-an-arcgis-online-story-map---30-minute-activity"><i class="fa fa-check"></i><b>9.3.2</b> Creating an ArcGIS Online Story Map - 30 minute activity</a></li>
+<li class="chapter" data-level="9.3.3" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#importing-and-working-with-gis-data-in-google-earth---30-minute-activity"><i class="fa fa-check"></i><b>9.3.3</b> Importing and Working with GIS Data in Google Earth - 30 minute activity</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#planning-your-term-project"><i class="fa fa-check"></i><b>9.4</b> Planning your term project</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#writing-style"><i class="fa fa-check"></i><b>9.4.1</b> Writing Style</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="term-project-and-digital-earth-project-management.html"><a href="term-project-and-digital-earth-project-management.html#evaluation"><i class="fa fa-check"></i><b>9.5</b> Evaluation</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-digital-earth-town-hall.html"><a href="the-digital-earth-town-hall.html"><i class="fa fa-check"></i><b>10</b> The Digital Earth Town Hall</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i>Assignments</a>
+<ul>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-1-assignment"><i class="fa fa-check"></i>Module 1 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-2-assignment"><i class="fa fa-check"></i>Module 2 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-3-assignment"><i class="fa fa-check"></i>Module 3 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-4-assignment"><i class="fa fa-check"></i>Module 4 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-5-assignment"><i class="fa fa-check"></i>Module 5 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-6-assignment"><i class="fa fa-check"></i>Module 6 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-7-assignment"><i class="fa fa-check"></i>Module 7 Assignment</a></li>
+<li class="chapter" data-level="" data-path="assignments.html"><a href="assignments.html#module-8-assignment"><i class="fa fa-check"></i>Module 8 Assignment</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="unmanned-aerial-systems-for-earth-observations" class="section level1" number="6">
+<h1><span class="header-section-number">Module 6</span> Unmanned Aerial Systems for Earth Observations</h1>
+<div id="pre-6" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Preliminaries</h2>
+<div id="re-6" class="section level3" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Readings</h3>
+<p>Readings should be done when referenced during this week’s lesson. Do not read before starting the lesson.</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://www.sensefly.com/app/uploads/2018/02/Remote-Damage-Assessment-after-Tornado-Hazard-by-using-UAS-Remote-Sensing-and-Information-Technologies.pdf">Remote Damage Assessment after Tornado Hazard by using UAS</a></li>
+<li><a href="https://tc.canada.ca/en/aviation/drone-safety/flying-your-drone-safely-legally">Fly your drone safely and legally (Government of Canada)</a></li>
+<li><a href="https://tc.canada.ca/sites/default/files/migrated/drone_infographic_3_en.pdf">Where can you fly your drone?</a></li>
+</ol>
+</div>
+<div id="lo-6" class="section level3" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Learning Objectives</h3>
+<p>By the end of this lesson, students will be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Describe characteristics of differnt types of UAS in terms of mapping</li>
+<li>List common sensors available for UAS-based mapping</li>
+<li>Find examples of geospatial applications or UAS-generated data</li>
+<li>Overview key regulations that pertain to operating UAS in Canada</li>
+</ol>
+</div>
+<div id="activities-for-module-6" class="section level3 unnumbered">
+<h3>Activities for Module 6</h3>
+<ol style="list-style-type: decimal">
+<li>Readings</li>
+<li>Assignment A-M6</li>
+<li>Quiz Q-M6</li>
+</ol>
+<p>Optional: Reading report [3 total for the course], Participation [minimum of 4 total for the course]</p>
+<hr>
+</div>
+</div>
+<div id="uas-for-mapping" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> UAS for Mapping</h2>
+<p>Drones! When used for environmental research and monitoring, a drone is actually one component in what is commonly called an <strong>unmanned aerial system</strong>. The components of a UAS include:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://palacarrassi.it/drone-ebee-x-sensefly-promozione-50/">the Unmanned Aerial Vehicle (UAV) - aka drone</a></li>
+<li><a href="https://www.dreamstime.com/antenna-signal-sign-vector-isolated-white-antenna-signal-sign-vector-isolated-white-background-symbol-signal-image105334252">Radio/GPS</a></li>
+<li><a href="https://beebom.com/panasonic-new-toughbook-cf-20-mark-2/">Flight control</a></li>
+<li><a href="https://www.pinterest.co.uk/pin/387942955381709062/?autologin=true">A pilot</a></li>
+<li><a href="https://zpenezto.cz/m/bazar/view/Spektrum-DX6i">Controller</a></li>
+<li><a href="https://tycgis.com/wp-content/uploads/2018/11/emotion_3.png">Flight programming software</a></li>
+</ol>
+<div class="figure"><span id="fig:unnamed-chunk-39"></span>
+<img src="images/uas.png" alt="Components of an unmanned aerial system, image credit: Branden Walker" width="60%" />
+<p class="caption">
+Figure 6.1: Components of an unmanned aerial system, image credit: Branden Walker
+</p>
+</div>
+<p>In order to understand the role that UAS play in the field of environmental monitoring and research, we can compare them to competing platforms for collecting geospatial imagery. As we have seen in Week 2, satellite based earth observation is an increasingly popular method of acquiring earth information. There are several important differences between satellite-based EO and UAS-based mapping:
+<div class="tabwid"><table style='border-collapse:collapse;'><thead><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Charcteristic</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Satellite</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">UAS</span></p></td></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;"></span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;"></span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Deployment</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Fixed orbits and data can only be acquired during a pass over the target site</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">UAS can be deployed anytime local conditions/regulations permit</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Spatial Resolution</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Several or hundreds of meters</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">High/very high, acquiring images where each pixel is centimeters</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Temporal Resolution</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">For quickly moving phenomena that require rapid mapping (e.g., wildfire spread), satellite EO may not have fine enough temporal resolution (i.e., revisit times)</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Can be deployed at any desired temporal resolution</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Spectral characteristics</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">In general, *most* UAS have less spectral bands than what is commonly available from EO sensors. However advanced sensors can be mounted on UAS including thermal, lidar, and hyperspectral sensors</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Wide variety of sensors available for multi and hyperspectral sensors</span></p></td></tr><tr style="overflow-wrap:break-word;"><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Operational considerations</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">In EO data, all of the planning and complexity goes into putting the satellite in orbit, so once it is there it stays somewhat predictable.</span></p></td><td style="width:216px;background-color:transparent;vertical-align: middle;border-bottom: 1.00px solid rgba(51, 51, 51, 1.00);border-top: 1.00px solid rgba(51, 51, 51, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;"><p style="margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2px;padding-top:2px;padding-left:5px;padding-right:5px;background-color:transparent;"><span style="font-family:'Arial';font-size:11px;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(17, 17, 17, 1.00);background-color:transparent;">Greater operational considerations in flying UAS for data collection than in obtaining EO data from a satellite. Ground-based considerations can be a big factor in where you can and where you can't fly a UAV. Meticulous planning is required to carry out a UAS mission for image acquisition.</span></p></td></tr></tbody></table></div></p>
+<p>So UAS can play a critical role in the collection of geospatial information when information needs require high spatial resolution imagery over a relatively small region, and ground conditions dictate that flying a UAV is legal, safe, and will generate useful geospatial data.</p>
+<div id="platforms" class="section level3" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Platforms</h3>
+<p>A key distinction between mapping UAVs and generic drones (even though these categories can and do overlap), is that those used for mapping must have automated flight capability. That is, a flight plan is set in advance and the UAV carries out the flight plan via autonomous flight. Usually flights are guided by GPS on board the UAV itself as well as capability to be radio controlled with a remote control. There are two main platforms designs used in UAS mapping.</p>
+<p><strong>Multi-rotor</strong> UAVs are vehicles with several top-mounted propellers which can maneurver into difficult spots and can be engaged to follow targets, avoid objects, and hover in the same position. The rotor engines move in alternating directions and a series of sensors automatically adjusts for effects of wind and momementum to keep the platform stable. Flying times for multi-copters vary widely, but usually range from 20 mins to 1 hr. As such these platforms are typically used for mapping small areas within line of sight of the operators. Rotary-UAVs can take off and land vertically, enabling them to be launched from small areas / complex terrain (e.g., in forest canopy).</p>
+<div class="figure"><span id="fig:unnamed-chunk-41"></span>
+<img src="images/platforms.jpg" alt="[Fixed wing and multi-rotor platforms for UAV mapping.](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Small_and_large_UAV_with_satcom.jpg/800px-Small_and_large_UAV_with_satcom.jpg) Licensed under Creative Commons 4.0." width="60%" />
+<p class="caption">
+Figure 6.2: <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Small_and_large_UAV_with_satcom.jpg/800px-Small_and_large_UAV_with_satcom.jpg">Fixed wing and multi-rotor platforms for UAV mapping.</a> Licensed under Creative Commons 4.0.
+</p>
+</div>
+<p><strong>Fixed-wing</strong> platforms have a central body and usually rear or front-mounted engines and/or electric-powered propellers that drive the vehicle forward, generating lift under their wings. Air speed and direction sensors and ailerons control/steer the UAV.
+Fixed-wind UAVs cannot hover, but have a larger range, can cover large areas in a single flight (~100 ha), and generally offer more stable conditions for image acquisition. For these reasons many mapping UAVs have been designed as fixed-wing UAVs. Take off and landing of fixed-wing UAVs require clear and open areas.</p>
+<p><strong>Stop and Think - 1</strong> <br><mark style="background-color: lightgreen"> Imagine you are working for a species-at-risk program focused on birds using specific types of farm as critical habitat. The program aims to identify potential sites for more detailed surveying, which tend to be near small and medium size ponds/water features (~.05 ha - .50 ha) in the spring. <a href="https://www.google.ca/maps/@43.5388579,-80.5421358,15888m/data=!3m1!1e3">The area of interest</a> is bounded by St. Jacobs on the south end, Winterbourn and West Montrose to the east, Elimira to the north, and Hawkseville and St. Clements to the west. Which type of platform (satellite EO, fixed-wing UAS, rotary UAS) would you use for this project and why? </mark></p>
+<hr>
+</div>
+<div id="sensors" class="section level3" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Sensors</h3>
+<p>Just like a camera can have different lenses, a UAV platform can be outfitted with different sensors. Sensors differ in terms of what types of light they are sensitive and whether they are a <em>passive</em> or <em>active</em> sensor. Passive sensors record reflected light and are basically cameras that image the ground. While UAV-based cameras can be controlled and take images at a variety of angles, for mapping we usually want a <em>vertical</em> orientation for the photo, so that distortions near the edges of the photo are minimized. Passive sensors can be sensitve to visible light just like a normal camera, or as a multi-spectral sensor where Red/Green/Blue light is sensed separately as distinct image channels. With multi-spectral, data the image channels can then be manipulated and enhanced in different ways. A near-infrared channel is often part of multi-spectral sensors, which are able to <em>see</em> into part of the electromagnetic spectrum that that we can’t see with the human eye. This is especially important for monitoring vegetation health, detecting stress in plants and crops before they might be visible with the human eye. For this reason, <a href="https://www.youtube.com/watch?v=v3YcZtlVrls&amp;ab_channel=NationalGeographic">UAVs have become increasingly used in agriculture</a>.</p>
+<p>Another type of sensor common in UAV mapping is a <strong>thermal infrared sensor</strong>.If you have ever <a href="https://www.youtube.com/watch?v=iFRxvDfYK1M&amp;ab_channel=ShadowFX">seen any of the Predator movies</a> you have seen thermal imagery. A thermal sensor as you might expect sense temperature differences of the scene it is imaging. Thermal sensors are typically much more expensive than standard visible-range sensors. A thermal sensor on an UAV can be used for different applications. For example, because water content is correlated with temperature, thermal variation can detect drought stress in plants or leaks in pipelines. One key advantage of UAV mapping is that different sensors can be added to a UAV platform for a specific project, greatly expanding the types of environmental projects a single UAV can contribute to.</p>
+<p><strong>Stop and Do - 1</strong> <br><mark style="background-color: orange"> Having reviewed some of the potential uses of UAVs in agriculture. <em>write down three potential issues</em> that might arise in deploying UAVs in an agricultural context </mark></p>
+<p>The second type of sensor is <em>active sensors</em> which transmit energy and record what is reflected back by the surface. The type of energy transmitted differs depending on the type of active sensing, but the most common for UAV mapping is called light detection and ranging (LiDaR). LiDaR data sends electromagnetic energy pulses as waves in the near infrared part of the spectrum (.90 <span class="math inline">\(\mu\)</span>m and 1.5<span class="math inline">\(\mu\)</span>m - which are micrometers or units of <span class="math inline">\(10^{-6}\)</span>m in length).</p>
+<hr>
+</div>
+</div>
+<div id="d-mapping-from-uas" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> 3D Mapping from UAS</h2>
+<p>One of the fundamental differences between traditional <em>mapping</em> and the digital earth, is in the treatment of the third dimension, elevation. In the early days of computer mapping and GIS, research and development efforts primarily focused on automating the process of mapping using computers. To this end, the objective was still to make a two-dimensional map that could be plotted on a piece of paper, rather than to use the digital representation itself as a new way to model the earth and geographic processes. While much progress has been made, elements of traditional 2D mapping remain rooted in many GIS and mapping applications.</p>
+<p>However, 3-dimensional representations are increasing and new data models and methods are being developed to generate, manage, analyze and visualize geographic information in full 3-dimensional detail. UAVs have been on the forefront of these changes through the method of <em>structure-from-motion</em> photogrammetry. Before we explore this exciting new technology, we can briefly review what traditional photogrammetry is.</p>
+<p>Photogrammetry is what it sounds like: making measurements from photographs. In the context of mapping this means measuring both distances and heights from aerial photographs. Photogrammetry has traditionally employed with aerial photography taken from aircraft. A key property of photogrammetric work is to exploit the property of parallax which is the apparent shift in the position of an object when viewed from different perspectives. Classic photogrammetry used overlapping photographs and a viewing device called a <em>stereoscope</em> to see <em>in stereo</em> and view portions of the sensed area in 3D. Thus measurements can be made between the base and top of an object for example, to measure its height. Here is an example of a classic stereoscope set-up for airphoto interpretation (4:17).</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mZkmXEFw7BE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>While photogrammetry is useful for making measurements of 3-dimensional objects in aerial photography, the visualization and exploration of 3D environmental data was limited. We will see how UAVs have drastically changed 3D measurements <em>and</em> visualization of geospatial data at very high resolution.</p>
+<div id="structure-from-motion-photogrammetry" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Structure from Motion Photogrammetry</h3>
+<p>Classic photogrammetry using steroscope viewers or even more advanced set ups using computer-vision devices are primarily a manual process of interacting with geospatial data to link and measure aspects of the scene in the photographs. A new type of photogrammetry has emerged in the last decade which is almost entirely automated. <em>Structure-from-motion</em> photogrammetry works according to the same principles as classic photogrammetry;</p>
+<ul>
+<li>obtaining overlapping images along the flightline,</li>
+<li>identifying the same objects in adjacent aerial images,</li>
+<li>and calculating their geometric properties through triangulation of the object in multiple scenes.</li>
+</ul>
+<p>The key innovation here is that instead of having to match objects manually; thousands of <em>tie points</em> are generated which map the same locations in multiple images together. Because the triangulation of objects in the scene is three-dimensional, we can use SFM to generate 3D representations of the landscape called an <em>SFM point cloud</em>.</p>
+<div class="figure"><span id="fig:unnamed-chunk-42"></span>
+<img src="images/dual-snow.png" alt="Adjacent aerial images obtained from a UAV in northern Canada, image source: Branden Walker. Used with permission." width="60%" />
+<p class="caption">
+Figure 6.3: Adjacent aerial images obtained from a UAV in northern Canada, image source: Branden Walker. Used with permission.
+</p>
+</div>
+<p>We see in the image above two adjacent images from a UAV mapping campaign in northern Canada. The success of an SFM analysis of images is to successfully identify objects in multiple scenes so their position can be triangulated. This requires substantial variability to be present in the scene so the same points in multiple images can be linked. Examples are things like the bases of trees, tops of trees, shadows, differences in snow textures etc.</p>
+<p><strong>Stop and Do - 2</strong> <br><mark style="background-color: orange"> Can you think of any environments or landscapes where SFM might not work? Why would that be?</mark></p>
+<p>Perhaps the most important part of SFM is what we can generate from the triangulated image objects in the scene. Because we have 3-dimensional coordinates, we can generate 3-dimensional imagery outputs which allow us to explore three dimensional structure of landscapes. Have a look at this <em>3D point cloud</em> (0:59) obtained from UAV flight campaign and SFM processing of the data;</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A4CGtticF6A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>SFM can also generate digital surface models (DSM) where the height of the surface (e.g., tops of trees) is computed from the point cloud as well as a digital elevation model (DEM) where the ground/terrain elevation is computed (e.g., based of trees). These three derived products; point clouds, DSMs, and DEMs can be used in a wide array of geospatial applications and serve as important basemap data for the study site.</p>
+<p><strong>Stop and Do - 3</strong> <br><mark style="background-color: orange"> What added benefit is there to viewing the landscape in 3D as opposed to a standard 2D map?</mark></p>
+</div>
+<div id="case-study-drones-for-mapping-snow-in-northern-canada" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Case Study: Drones for mapping snow in northern Canada</h3>
+<p>Several researchers at Laurier incorporate UAS into their research programmes for environmental data collection and mapping. One group of researchers, led by <a href="https://www.wlu.ca/academics/faculties/faculty-of-arts/faculty-profiles/philip-marsh/index.html">Professor Phil Marsh</a> - have pioneered a snow mapping method using fixed-wing UAVs. Working primarily north of the treeline at <a href="https://www.trailvalleycreek.ca/">Trail Valley Creek Arctic Research Station</a>. One of the group’s research objectives is to monitor snowpack and how it changes over time. Utilizing structure-from-motion photogrammetry, the team use UAVs to generate a digital surface map of a study site during the summer months as a baseline elevation datum.</p>
+<p>During winter when there is snowcover, they fly another UAV route to generate at winter DSM. Now for each pixel we have two values, the height above mean sea level <em>without snow</em>, and the height above mean sea level <em>with snow</em>, and therefore subtracting one from the other gives you the snow depth (make sure you understand this).</p>
+<p>In this way, the team can fly multiple UAV mapping campaigns through the winter to monitor the snowpack over time. This has important implications for understanding the hydrological regime of the area and how it is responding to changes in climate.</p>
+<div class="figure"><span id="fig:unnamed-chunk-43"></span>
+<img src="images/snow.png" alt="Mapping snow depth using structure-from-motion photogrammetry and unmanned aerial vechicles, image credit: Branden Walker" width="70%" />
+<p class="caption">
+Figure 6.4: Mapping snow depth using structure-from-motion photogrammetry and unmanned aerial vechicles, image credit: Branden Walker
+</p>
+</div>
+<p>And here we can see the SFM-derived changes in snow water equivalent during the melt period in the landscape. [Note: snow-water equivalent (SWE) is the amount of water contained in the snowpack and is an important hydrological indicator]. Visualizing how snow differentially melts in relation to landcover and vegetation classes helps to extrapolate water balance changes across the wider landscape where land cover classes can be mapped but are too large for detailed UAV mapping.</p>
+<div class="figure"><span id="fig:unnamed-chunk-44"></span>
+<img src="images/swe-melt.png" alt="Visualization of change in snow water equivalent during melt of snowpack in Trail Valley Creek, NT., image source: Branden Walker. Used with permission." width="677" />
+<p class="caption">
+Figure 6.5: Visualization of change in snow water equivalent during melt of snowpack in Trail Valley Creek, NT., image source: Branden Walker. Used with permission.
+</p>
+</div>
+<p>This is how UAV-based mapping can be incorporated into a broader DE system, generating high resolution data over specific sites which can then be linked to both field level measurements (<em>in-situ data</em>) and more large scale earth observation data available from satellites. These three scales of geospatial data acquisition form a hierarchy that can be tailored to address specific environmental information needs and create the most accurate maps, models, and forecasting systems within an integrated DE system. Integration of geospatial data across spatial scales is a core research area for realizing the DE vision.</p>
+<hr>
+</div>
+</div>
+<div id="uav-mapping-project-planning" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> UAV Mapping Project Planning</h2>
+<p>While recreational drones are relatively common now with many amateurs using them for photography and just for fun, using a UAV for generating useful geospatial data requires a lot of equipment, preparations, and planning.</p>
+<div id="uav-flight-planning" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> UAV Flight Planning</h3>
+<p>Flight planning requires several considerations about the study site, conditions, the actual flight plan, and logistical factors. Firstly, the study site should be clear of obstructions, traffic, buildings, etc. Except in rare circumstances where special permits are required, UAV mapping should not be attempted over large groups of people and/or populated areas. Depending on the platform, the take-off/landing area needs to be identified and ensured suitable.</p>
+<div class="figure"><span id="fig:unnamed-chunk-45"></span>
+<img src="images/flightline.png" alt="Basic schematic of flight line with lateral and medial overlap shown." width="590" />
+<p class="caption">
+Figure 6.6: Basic schematic of flight line with lateral and medial overlap shown.
+</p>
+</div>
+<p>Any overhead obstructions (e.g., power lines) need to be identified and take account of. The flight altitude/ground resolution and the degree of lateral and medial overlap needs to be specified to ensure enough tie points for either 2D or 3D mapping. Finally the flight time of the planned mission needs to be considered; so that the battery life of the UAV is sufficient to complete the flight path. Flight planning software can be used to simplify these steps and ensure a successful mission.</p>
+<div class="figure"><span id="fig:unnamed-chunk-46"></span>
+<img src="images/flight-plan.png" alt="Flight planning software showing flight lines, take off and landing positions for mapping mission, image source: Alex MacLean. Used with permission." width="694" />
+<p class="caption">
+Figure 6.7: Flight planning software showing flight lines, take off and landing positions for mapping mission, image source: Alex MacLean. Used with permission.
+</p>
+</div>
+<hr>
+</div>
+</div>
+<div id="regulations-for-using-uav-for-mapping-in-canada" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Regulations for using UAV for mapping in Canada</h2>
+<p>Flying drones is heavily regulated in Canada. As of 2019 you now need a Drone Pilot Certificate to operate a drone that weighs 250 grams or more. 📖 <a href="https://tc.canada.ca/en/aviation/drone-safety/flying-your-drone-safely-legally">Read through the regulations provided by the government of Canada</a>. As well, take a look at the inforgraphic 📖 <a href="https://tc.canada.ca/sites/default/files/migrated/drone_infographic_3_en.pdf">Where can you fly your drone?</a>. One of the most important regulations is to <em>NOT</em> fly within 5.6 km of an aerodrome. It might be surprising but that regulation significantly limits where you can fly in populated areas. Have a look at a <a href="https://nrc.canada.ca/en/drone-tool/">webmap that captures exclusion areas and areas of caution</a>.</p>
+<div class="figure"><span id="fig:unnamed-chunk-47"></span>
+<img src="images/drone-tool.png" alt="National Research Council of Canada Drone Mapping Tool, image source: https://nrc.canada.ca/en/drone-tool/" width="548" />
+<p class="caption">
+Figure 6.8: National Research Council of Canada Drone Mapping Tool, image source: <a href="https://nrc.canada.ca/en/drone-tool/" class="uri">https://nrc.canada.ca/en/drone-tool/</a>
+</p>
+</div>
+<p><strong>Stop and Do - 4</strong> <br><mark style="background-color: orange"> If you wanted to map your current residence would you be within an eligible zone? What would be some limitations you might incur if planning a UAV-based mapping mission over your current residence? What is the difference between orange filled areas and red filled areas on the map?
+</mark></p>
+<p>Now that you have a bit of understanding of how UAS work and can be used for geospatial mapping, 📖 <a href="https://www.sensefly.com/app/uploads/2018/02/Remote-Damage-Assessment-after-Tornado-Hazard-by-using-UAS-Remote-Sensing-and-Information-Technologies.pdf">read through the case study of using UAS for damage assessments</a>.</p>
+<hr>
+</div>
+<div id="m6-summ" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Summary</h2>
+<p>In the last decade the use of drones and UAS for geospatial mapping has increased significantly. As a data source platform for the DE, UAV-based mapping can capture local scale landscapes at very high spatial resolution with a variety of sensors and platform configurations. This extreme flexibility coupled with the fact that deployment of mapping missions can be tailored to respond to unexpected events on an as-needed basis makes this mode of geospatial data capture very appealing. For these reasons we can only expect the trend of UAV-based mapping to increase.</p>
+<div id="m6-kt" class="section level3" number="6.6.1">
+<h3><span class="header-section-number">6.6.1</span> Keywords</h3>
+<ul>
+<li>UAS, UAV, drone</li>
+<li>VLOS flight</li>
+<li>structure from motion photogrammetry</li>
+<li>point cloud</li>
+<li>tie points</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="gps-and-wayfinding.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gis-and-big-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-UAS.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
